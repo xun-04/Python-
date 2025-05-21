@@ -3,7 +3,6 @@
 
 ## 提交
 
-- 提交截止时间：2025 年 5 月 23 日 23:59
 - 提交链接：[点击提交作业](https://gitee.com/link?target=https%3A%2F%2Fworkspace.jianguoyun.com%2Finbox%2Fcollect%2F8b71e5254a0f4f36ac95b582ffd7f2db%2Fsubmit) &#x1F34E; 
 
 ## 任务说明
