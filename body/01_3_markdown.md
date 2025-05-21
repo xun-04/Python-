@@ -1,4 +1,4 @@
-# Markdown：写笔记做幻灯片
+# Markdown
 
 ## 何谓 Markdown？
 
@@ -23,18 +23,18 @@ Markdown 是一种轻量级的标记语言，允许你使用易读易写的纯�
 
 以下是 [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) 原始设计文档中列出的基本元素，所有 Markdown 应用程序都支持这些元素。
 
-| 元素                                                                    | Markdown 语法                                                  |
-| :---------------------------------------------------------------------- | :------------------------------------------------------------- |
-| [标题](https://www.markdownguide.org/basic-syntax/#headings)            | `# 一级标题`<br>`## 二级标题`<br>`### 三级标题`                |
-| [粗体](https://www.markdownguide.org/basic-syntax/#bold)                | `**粗体文本**`                                                 |
-| [斜体](https://www.markdownguide.org/basic-syntax/#italic)              | `*斜体文本*`                                                   |
-| [引用块](https://www.markdownguide.org/basic-syntax/#blockquotes-1)     | `> 引用内容`                                                   |
-| [有序列表](https://www.markdownguide.org/basic-syntax/#ordered-lists)   | `1. 第一项`<br>`2. 第二项`<br>`3. 第三项`                      |
-| [无序列表](https://www.markdownguide.org/basic-syntax/#unordered-lists) | `- 第一项`<br>&emsp; `  -  第一条`<br>`- 第二项`<br>`- 第三项` |
-| [代码](https://www.markdownguide.org/basic-syntax/#code)                | \`代码`                                                        |
-| [水平线](https://www.markdownguide.org/basic-syntax/#horizontal-rules)  | `---`                                                          |
-| [链接](https://www.markdownguide.org/basic-syntax/#links)               | `[连享会主页](https://www.lianxh.cn)`                          |
-| [图片](https://www.markdownguide.org/basic-syntax/#images-1)            | `![图片标题](/Fig/image.jpg)`                                  |
+| 元素            | Markdown 语法                                                  |
+| :-------------- | :------------------------------------------------------------- |
+| 标题            | `# 一级标题`<br>`## 二级标题`<br>`### 三级标题`                |
+| 粗体            | `**粗体文本**`                                                 |
+| 斜体            | `*斜体文本*`                                                   |
+| 引用块          | `> 引用内容`                                                   |
+| 有序列表        | `1. 第一项`<br>`2. 第二项`<br>`3. 第三项`                      |
+| 无序列表        | `- 第一项`<br>&emsp; `  -  第一条`<br>`- 第二项`<br>`- 第三项` |
+| 代码高亮显示            | \`代码\` (\`xtreg\` &rarr; `xtreg`)                                                       |
+| 水平线          | `---`                                                          |
+| 链接            | `[连享会主页](https://www.lianxh.cn)`                          |
+| 图片            | `![图片标题](/Fig/image.jpg)` 或 `![](图片网址)`                 |
 
 ### 表格
 
@@ -62,7 +62,7 @@ Markdown 是一种轻量级的标记语言，允许你使用易读易写的纯�
   - [Markdown常用LaTex数学公式](https://www.lianxh.cn/details/243.html)
   - [神器-数学公式识别工具-mathpix](https://www.lianxh.cn/details/284.html)
 
-```md
+```markdown
 模型设定为：
 
 $$y_{it} = \alpha_i + x_{it}\beta + u_{it}$$
@@ -75,6 +75,42 @@ $$y_{it} = \alpha_i + x_{it}\beta + u_{it}$$
 $$y_{it} = \alpha_i + x_{it}\beta + u_{it}$$
 
 其中，$y_{it}$ 为被解释变量，$\alpha_i$ 为个体效应。
+
+### 代码块
+
+````markdown
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6]
+})
+```
+
+```stata
+sysuse "auto.dta", clear
+regress mpg weight
+display "Results: " 2 + 3
+```
+````
+
+渲染效果：
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6]
+})
+```
+
+```stata
+sysuse "auto.dta", clear
+regress mpg weight
+display "Results: " 2 + 3
+```
 
 ### 扩展阅读
 

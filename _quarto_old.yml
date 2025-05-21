@@ -1,0 +1,91 @@
+project:
+  type: book
+  output-dir: ds
+
+book:
+  title: "数据分析"
+  reader-mode: true 
+  author: "连玉君"
+#  date: "`r format(Sys.time(), '%d %B, %Y')`"
+  date: today
+  date-format: iso  # https://quarto.org/docs/reference/dates.html
+#  lang: zh  # 不要设置这个，会导致很多问题
+  
+  sidebar: 
+    title: "<a href='/index.html'>ds</a>"  # !important, 否则主页链返回链接会出错
+    logo: images/ds-book-logo-40.png
+    logo-href: https://book.lianxh.cn/ds/index.html
+    style: floating  #docked
+    search: true
+    tools:
+      - icon: house-fill
+        href: https://www.lianxh.cn
+      - icon: camera-video-fill
+        href: https://lianxh-class.cn/
+      - icon: github
+        href: https://github.com/arlionn/ds
+
+
+  page-footer:
+    center: |
+      [www.lianxh.cn](https://www.lianxh.cn)
+    right: |
+      Support: <a href="https://quarto.org/">Quarto</a>
+  favicon: images/ds-book-logo-40.png   # URL logo
+  site-url: https://book.lianxh.cn/ds/index.html # 主页地址, 否则点击右上角链接会乱码
+  editor: source    # 始终采用源代码模式编辑
+
+#----------------------- Chapters ---------------
+  chapters:
+
+    - index.qmd
+    - body/_home.qmd
+    - body/00_intro.ipynb
+    - part: "**Python 基础**"
+      chapters: 
+        - body/00_py_with_AI_intro.ipynb
+        - body/00_py_with_AI_pic.ipynb
+        - body/01_1_install-Python-Anocanda.ipynb
+        - body/01_2_install_FAQs.ipynb
+        - body/01_3_markdown.md
+        - body/01_py_01_basic.ipynb
+        - body/01_py_01_basic_01_grammer.ipynb
+        - body/01_py_01_basic_02_QuickReference.md
+        - body/01_py_01_basic_03_Useful_Packages.md
+        - body/01_py_01_basic_04_import.md
+        - body/01_py_02_numpy_scipy.ipynb
+    - part: "**数据分析**"
+      chapters: 
+        - body/data_01_intro.ipynb
+        - body/data_02_get_data_GMD.ipynb
+        - body/TS_SZ_index.ipynb        
+    - part: "**可视化**"
+      chapters: 
+        - body/graph_01_intro.ipynb
+        - body/graph_dis_box_violin.ipynb
+        - body/graph_dis_histogram.ipynb
+        - body/graph_dis_kdensity.ipynb
+    - part: "**时间序列分析**"
+      chapters: 
+        - body/TS_FRED_US_unemploy_rate.ipynb
+
+format:
+  html:
+    toc: true
+    toc-depth: 3  # 三级以上 sections 才伸缩
+    theme: cosmo         # 可选：cosmo, flatly, litera, journal 等
+    linestretch: 1.7          # 行间距      
+    fontsize: 11.5pt          # 字号
+    number-sections: true     # 自动章节编号
+    link-external-newwindow: true
+    highlight-style: atom-one  # 语法高亮, breezy, github, tango, solarized-light
+    code-overflow: wrap        # 控制长代码的换行
+#    html-table-processing: none    
+    css: styles.css
+#    include-after-body: footer.html    # https://github.com/oscarbaruffa/BigBookofR
+
+editor: visual
+
+# _quarto_yml refs
+# https://github.com/hadley/r4ds/blob/main/_quarto.yml
+# https://github.com/appliedepi/epiRhandbook_eng/

@@ -25,7 +25,6 @@ book:
       - icon: github
         href: https://github.com/arlionn/ds
 
-
   page-footer:
     center: |
       [www.lianxh.cn](https://www.lianxh.cn)
@@ -51,12 +50,16 @@ book:
         - body/01_py_01_basic.ipynb
         - body/01_py_01_basic_01_grammer.ipynb
         - body/01_py_01_basic_02_QuickReference.md
-        - body/01_py_01_basic_03_Useful_Packages.md
+        - body/01_py_01_basic_03_Packages.md
         - body/01_py_01_basic_04_import.md
         - body/01_py_02_numpy_scipy.ipynb
+        - body/01_py_03_matplotlib.ipynb
+        - body/01_py_04_func_and_module.ipynb
+        - body/01_py_05_class.ipynb
     - part: "**数据分析**"
       chapters: 
-        - body/data_01_intro.ipynb
+#        - body/data_01_intro.ipynb
+        - body/data_02_data_type.ipynb
         - body/data_02_get_data_GMD.ipynb
         - body/TS_SZ_index.ipynb        
     - part: "**可视化**"
@@ -73,16 +76,22 @@ format:
   html:
     toc: true
     toc-depth: 3  # 三级以上 sections 才伸缩
-    theme: cosmo         # 可选：cosmo, flatly, litera, journal 等
-    linestretch: 1.7          # 行间距      
+    theme: cosmo         # 可选：cosmo, flatly, litera, litera, yeti 等  主题模版
+    linestretch: 1.6          # 行间距   1.7   
     fontsize: 11.5pt          # 字号
     number-sections: true     # 自动章节编号
     link-external-newwindow: true
-    highlight-style: atom-one  # 语法高亮, breezy, github, tango, solarized-light
+    highlight: true         # 代码高亮
+    highlight-style: atom-one  # 语法高亮, atom-one, breezy, github, tango, solarized-light
+    code-fold: true              # （可选）代码默认不折叠
+    code-line-numbers: true      # （可选）关闭行号
     code-overflow: wrap        # 控制长代码的换行
 #    html-table-processing: none    
     css: styles.css
 #    include-after-body: footer.html    # https://github.com/oscarbaruffa/BigBookofR
+    callout-appearance: default        # 启用 callout 默认渲染样式
+    md-extensions:
+      - callout                       # 确保 markdown 支持 callout 块语法
 
 editor: visual
 

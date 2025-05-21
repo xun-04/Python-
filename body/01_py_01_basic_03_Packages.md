@@ -6,7 +6,7 @@
 
 然而，对于经济、金融、管理、社会科学等领域的初学者来说，要在如此庞大的生态中快速识别出高效实用的工具包，并不容易。为此，本文梳理了这些领域中较为常用、应用成熟的 Python 扩展包，按功能分类整理，并附上官网或 GitHub 链接，便于进一步了解与使用。
 
-### 数据处理与分析
+## 数据处理与分析
 
 这些库是处理结构化数据的核心工具，适用于经济建模、金融分析和社会学研究。
 
@@ -28,7 +28,7 @@
 6.  **cuDF** ([文档](https://docs.rapids.ai/api/cudf/stable/))\
     RAPIDS.AI 提供的 GPU 加速 DataFrame 库，语法类似 pandas。
 
-### 数据可视化
+## 数据可视化
 
 用直观图表展示经济趋势、金融指标或社会现象。
 
@@ -44,7 +44,7 @@
 4.  **Bokeh** ([官网](https://bokeh.org/))\
     适合 Web 端交互式可视化和实时流式数据图表。
 
-### 统计与计量经济学
+## 统计与计量经济学
 
 从基础统计到复杂计量模型，覆盖社会科学研究需求。
 
@@ -57,7 +57,7 @@
 3.  **ARCH** ([GitHub](https://github.com/bashtage/arch))\
     金融时间序列分析的经典库，支持 GARCH、EGARCH 等模型。
 
-### 机器学习与 AutoML
+## 机器学习与 AutoML
 
 从传统算法到经济预测，助力数据驱动决策。
 
@@ -88,7 +88,7 @@
 9.  **FLAML** ([GitHub](https://github.com/microsoft/FLAML))\
     微软开源的轻量级 AutoML 工具，支持低资源、高效率搜索。
 
-### 金融科技与量化计算
+## 金融科技与量化计算
 
 专为金融数据、交易策略和经济建模设计。
 
@@ -104,7 +104,7 @@
 4.  **PyPortfolioOpt** ([GitHub](https://github.com/robertmartin8/PyPortfolioOpt))\
     投资组合优化库，支持均值-方差、最小方差、风险平价等策略。
 
-### 网络爬虫与自动化
+## 网络爬虫与自动化
 
 高效获取公开经济数据或社会舆情信息。
 
@@ -117,7 +117,7 @@
 3.  **Selenium** ([官网](https://www.selenium.dev/))\
     浏览器自动化框架，支持处理 JavaScript 动态加载页面。
 
-### 宏观与市场数据获取
+## 宏观与市场数据获取
 
 1.  **yfinance** ([GitHub](https://github.com/ranaroussi/yfinance))\
     从 Yahoo Finance 抓取股票、汇率、指数等历史数据。
@@ -131,7 +131,7 @@
 4.  **OECD API** ([官网](https://data.oecd.org/))\
     提供全球经济合作组织（OECD）各国经济社会数据。
 
-### 自然语言处理（NLP）
+## 自然语言处理（NLP）
 
 适用于社会科学、金融情感分析、文本挖掘与用户舆情分析。
 
@@ -144,7 +144,7 @@
 3.  **Gensim** ([官网](https://radimrehurek.com/gensim/))\
     专用于主题建模、文档相似度计算与文本向量化，支持 LDA、LSA、word2vec 等主流算法，适合海量语料处理与信息检索场景。
 
-### 参考资料与延伸阅读
+## 参考资料与延伸阅读
 
 -   [spaCy 官方网站](https://spacy.io/)
 -   [NLTK 教程](https://www.nltk.org/book/)
@@ -161,7 +161,7 @@
 -   [TPOT 教程](https://github.com/EpistasisLab/tpot)
 -   [FLAML 教程](https://github.com/microsoft/FLAML)
 
-### 相关推文
+## 相关推文
 
 > Note：产生如下推文列表的 Stata 命令为：\
 >   `lianxh 扩展包 Python金融 selenium 可复现数据科学 , md nocat`\
