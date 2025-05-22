@@ -80,11 +80,11 @@
     ]
   },
   {
-    "objectID": "body/00_intro.html#数据获取",
-    "href": "body/00_intro.html#数据获取",
+    "objectID": "body/00_intro.html#数据",
+    "href": "body/00_intro.html#数据",
     "title": "3  前言",
-    "section": "3.3 数据获取",
-    "text": "3.3 数据获取\n\n3.3.1 学校图书馆\n\n中大图书馆-统计类数据库\n\n\nCSMAR (国泰安数据库-公司金融-股票-债券):\n\n🍎 https://data.csmar.com/\n\nEPS数据平台\nWind资讯金融终端\n中经网产业数据\n\n国内宏观层面的数据基本上都能够找到。Excel → Python/Stata\n例：宏观数据\n\n中经网统计数据库\nEMIS—Emerging Markets Information Service（新兴市场动态及商务信息数据库）\n\n新闻，股指，最新统计数据等\nChina - Financial markest\n\n\nRESSET系列数据库\n\nRESSET系列数据库 | RESSET企业大数据平台\n\n需要输入账号和密码\n1、中山大学校园网IP范围内，直接点击访问。\n2、官方网站访问： http://www.resset.cn，点击页面“快速登录”右边的“企业大数据平台”链接后输入对应的用户名及密码进行登录。用户名：sysu和密码：sysu1903。\n3、校外不限IP访问，通过CARSI平台访问登陆，访问地址：http://db.resset.com/，点击页面的：CARIS 平台登陆，选择学校，然后输入验证身份信息后登陆使用。\n\n\n\n\n3.3.2 公开数据\n\n全球数据\n\n连小白, 2025, GMD：最新全球宏观数据库-243个国家46个宏观变量, 连享会 No.1559.\n\nGMD 主页: https://www.globalmacrodata.com/data.html\n\n\n各国、各级政府的统计局：\n\n美国人口调查局\n中国国家统计局\n中国证监会\n中国人民银行\n\n国际国内各类组织机构\n\n世界银行\n美国疾病预防控制中心\n国际货币基金组织\n美国联邦储备银行\n\n各类网站提供的数据集\n\nGitHub 开放数据集列表 awesome-public-datasets\nkaggle 网站提供大量数据分析竞赛及相应的数据集。\n\n\n\n\n3.3.3 数据集搜索引擎\n\nKDNuggets - datasets\n\n数据科学和机器学习领域的知名网站，提供了大量的资源和信息。\n\nGoogle Dataset Search\nKaggle Datasets\nUCI Machine Learning Repository\nAWS Public Datasets\nMicrosoft Azure Open Datasets\nOpen Data Portal by European Union\nWorld Bank Open Data\nData.gov",
+    "section": "3.3 数据",
+    "text": "3.3 数据\n\n3.3.1 数据科学平台和搜索引擎\n\nKDNuggets - datasets\n\n数据科学和机器学习领域的知名网站，提供了大量的资源和信息。\n\nKaggle Datasets\n\n全球知名的数据科学与机器学习社区，用户可以在平台上获取数据集、参与竞赛、分享与学习代码、交流讨论。\n\nUCI Machine Learning Repository\n\n机器学习领域最经典的数据集仓库，涵盖分类、回归、聚类等多种任务，适合教学和算法测试。\n\nGoogle Dataset Search\n\n谷歌推出的专用数据集搜索引擎，聚合全球各类开放数据集，支持多语言检索，便于快速定位所需数据。\n\nAWS Public Datasets\n\n亚马逊云平台提供的开放数据集，涵盖气象、基因组、卫星影像等大规模数据，适合云端分析和机器学习。\n\nMicrosoft Azure Open Datasets\n\n微软云平台提供的开放数据集，聚焦天气、健康、金融等领域，便于在 Azure 上直接调用和分析。\n\nOpen Data Portal by European Union\n\n欧盟官方开放数据门户，收录成员国及欧盟机构的各类统计、经济、社会等数据，支持多语种访问。\n\nWorld Bank Open Data\n\n世界银行开放数据平台，提供全球各国经济、社会、发展等宏观数据，适合国际比较和经济研究。\n\nData.gov\n\n美国政府开放数据平台，涵盖农业、气候、教育、能源等众多领域，数据权威且更新及时。\n\nawesome-public-datasets\n\nGitHub 开放数据集列表\n\n\n\n\n3.3.2 学校图书馆\n\n中大图书馆-统计类数据库\n\n\nCSMAR (国泰安数据库-公司金融-股票-债券):\n\n🍎 https://data.csmar.com/\n\nEPS数据平台\nWind资讯金融终端\n中经网产业数据\n\n国内宏观层面的数据基本上都能够找到。Excel → Python/Stata\n例：宏观数据\n\n中经网统计数据库\nEMIS—Emerging Markets Information Service（新兴市场动态及商务信息数据库）\n\n新闻，股指，最新统计数据等\nChina - Financial markest\n\n\nRESSET系列数据库\n\nRESSET系列数据库 | RESSET企业大数据平台\n\n需要输入账号和密码\n1、中山大学校园网IP范围内，直接点击访问。\n2、官方网站访问： http://www.resset.cn，点击页面“快速登录”右边的“企业大数据平台”链接后输入对应的用户名及密码进行登录。用户名：sysu和密码：sysu1903。\n3、校外不限IP访问，通过CARSI平台访问登陆，访问地址：http://db.resset.com/，点击页面的：CARIS 平台登陆，选择学校，然后输入验证身份信息后登陆使用。\n\n\n\n\n3.3.3 公开数据\n\n全球数据\n\n连小白, 2025, GMD：最新全球宏观数据库-243个国家46个宏观变量, 连享会 No.1559.\n\nGMD 主页\n\n\n各国、各级政府的统计局：\n\n美国人口调查局\n中国国家统计局\n中国证监会\n中国人民银行\n\n国际国内各类组织机构\n\n世界银行\n美国疾病预防控制中心\n国际货币基金组织\n美国联邦储备银行",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>前言</span>"
     ]
@@ -105,18 +105,7 @@
     "href": "body/00_py_with_AI_intro.html#ai-工具",
     "title": "4  借助 AI 写代码",
     "section": "",
-    "text": "通用工具\n\nChatGPT - 由 OpenAI 开发的聊天机器人，基于 GPT-3.5 架构。可以用于编写代码、回答问题、生成文本等。\nChatGPT Plus - 付费版本的 ChatGPT，提供更快的响应时间和更高的可用性。\nDeepSeek - 国内访问顺畅，整体表现不错，但结果的稳定性欠佳。\n豆包 - 更适合文字编排、翻译等。\nkimi - 与豆包相当。\n\n编程工具 (这些都是 VScode 中的插件)\n\nGitHub Copilot: VScode 插件，可以在编写代码时提供实时建议和补全。首月免费，后续 $10/月。\nTabnine: 代码补全工具，支持多种编程语言。\nclint: 代码补全工具，支持多种编程语言。\nCodeium: 代码补全工具，支持多种编程语言。",
-    "crumbs": [
-      "**Python 基础**",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
-    ]
-  },
-  {
-    "objectID": "body/00_py_with_AI_intro.html#连玉君的提示词",
-    "href": "body/00_py_with_AI_intro.html#连玉君的提示词",
-    "title": "4  借助 AI 写代码",
-    "section": "4.2 连玉君的提示词",
-    "text": "4.2 连玉君的提示词\n\nhttps://github.com/arlionn/UseChatGPT\nhttps://gitee.com/arlionn/UseChatGPT (码云版)",
+    "text": "通用工具\n\nChatGPT - 由 OpenAI 开发的聊天机器人，基于 GPT-3.5 架构。可以用于编写代码、回答问题、生成文本等。\nChatGPT Plus - 付费版本的 ChatGPT，提供更快的响应时间和更高的可用性。\nDeepSeek - 国内访问顺畅，整体表现不错，但结果的稳定性欠佳。\n豆包 - 更适合文字编排、翻译等。\nkimi - 与豆包相当。\n\n编程工具 (这些都是 VScode 中的插件)\n\nGitHub Copilot: VScode 插件，可以在编写代码时提供实时建议和补全。首月免费，后续 $10/月。\nTabnine: 代码补全工具，支持多种编程语言。\nclint: 代码补全工具，支持多种编程语言。\nCodeium: 代码补全工具，支持多种编程语言。",
     "crumbs": [
       "**Python 基础**",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
@@ -126,19 +115,8 @@
     "objectID": "body/00_py_with_AI_intro.html#理念",
     "href": "body/00_py_with_AI_intro.html#理念",
     "title": "4  借助 AI 写代码",
-    "section": "4.3 理念",
-    "text": "4.3 理念\n\n4.3.1 自然语言编程 vs. 传统编程\n\n「自然语言编程」与 Python、C++ 等传统编程本质上都是向计算机发出指令，要求其执行特定操作。\n区别在于：\n\n传统编程语言（如 Python、C++）有严格的语法和结构。\n\n自然语言编程则用人类语言（如中文、英文）描述操作。\n\n\n\n\n4.3.2 思维方式与沟通能力\n\n初学时，自然语言编程似乎更简单。\n真正发挥其潜力，关键在于思维方式和沟通方式（如何提问）。\n学习曲线很陡峭：\n\n知识广度：你要知道很多东西以及他们的关联，才能提出好的问题。\n知识深度：基本概念、核心理论、核心算法\n逻辑思维：界定问题、拆解问题、追问 (横向 v.s. 纵向)\n语言表达：简洁、准确、清晰",
-    "crumbs": [
-      "**Python 基础**",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
-    ]
-  },
-  {
-    "objectID": "body/00_py_with_AI_intro.html#最核心的理念转变",
-    "href": "body/00_py_with_AI_intro.html#最核心的理念转变",
-    "title": "4  借助 AI 写代码",
-    "section": "4.4 最核心的理念转变",
-    "text": "4.4 最核心的理念转变\n\n提示词 = 自然语言的“代码”\n写好提示词，就像写好 Python/C++ 代码一样重要。\n许多高校已开设「提示词工程」课程，「Prompt 工程师」将成为热门职业。\n\n\n4.4.1 推荐学习资料\n\nPrompt Engineering Guide\n吴恩达老师的 ChatGPT Prompt Engineering for Developers",
+    "section": "4.2 理念",
+    "text": "4.2 理念\n\n自然语言编程 vs. 传统编程\n\n\n「自然语言编程」与 Python、C++ 等传统编程本质上都是向计算机发出指令，要求其执行特定操作\n区别在于：\n\n传统编程语言（如 Python、C++）有严格的语法和结构\n自然语言编程则用人类语言（如中文、英文）描述操作\n\n\n\n思维方式与沟通能力\n\n\n初学时，自然语言编程似乎更简单\n真正发挥其潜力，关键在于思维方式和沟通方式（如何提问）\n学习曲线很陡峭：\n\n知识广度：你要知道很多东西以及他们的关联，才能提出好的问题\n知识深度：基本概念、核心理论、核心算法\n逻辑思维：界定问题、拆解问题、追问（横向 v.s. 纵向）\n语言表达：简洁、准确、清晰\n\n\n\n最核心的理念转变\n\n\n提示词 = 自然语言的”代码”\n写好提示词，就像写好 Python/C++ 代码一样重要\n许多高校已开设「提示词工程」课程，「Prompt 工程师」将成为热门职业\n\n\n推荐学习资料\n\n\nPrompt Engineering Guide\n吴恩达老师的 ChatGPT Prompt Engineering for Developers",
     "crumbs": [
       "**Python 基础**",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
@@ -148,30 +126,19 @@
     "objectID": "body/00_py_with_AI_intro.html#提示词",
     "href": "body/00_py_with_AI_intro.html#提示词",
     "title": "4  借助 AI 写代码",
-    "section": "4.5 提示词",
-    "text": "4.5 提示词\n\n4.5.1 Tips\n\n先粗后细 e.g. 生成讲义 v.s 先细后粗\n顺藤摸瓜-迁移 e.g. 各种抽样方法\n虚构角色 e.g. 你是一个资深的英文经济学期刊的编辑 → 推文\n\n\n\n4.5.2 收集整理自己的提示词\n\nChatGPT Prompting Cheat Sheet\nThe Complete ChatGPT Cheat Sheet 2025!\nPrompt工作手册 - 方法篇",
+    "section": "4.3 提示词",
+    "text": "4.3 提示词\n\nTips\n\n\n先粗后细 e.g. 生成讲义 v.s 先细后粗\n顺藤摸瓜-迁移 e.g. 各种抽样方法\n虚构角色 e.g. 你是一个资深的英文经济学期刊的编辑 → 推文\n\n\n收集整理自己的提示词\n\n\nChatGPT Prompting Cheat Sheet\nThe Complete ChatGPT Cheat Sheet 2025!\nPrompt工作手册 - 方法篇",
     "crumbs": [
       "**Python 基础**",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
     ]
   },
   {
-    "objectID": "body/00_py_with_AI_intro.html#借助-ai-找-iv连玉君的实战经验",
-    "href": "body/00_py_with_AI_intro.html#借助-ai-找-iv连玉君的实战经验",
+    "objectID": "body/00_py_with_AI_intro.html#我的使用经验",
+    "href": "body/00_py_with_AI_intro.html#我的使用经验",
     "title": "4  借助 AI 写代码",
-    "section": "4.6 借助 AI 找 IV：连玉君的实战经验",
-    "text": "4.6 借助 AI 找 IV：连玉君的实战经验\n\n帮我找 20 个 IV\n寻找 IV 的提示词如何写？",
-    "crumbs": [
-      "**Python 基础**",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
-    ]
-  },
-  {
-    "objectID": "body/00_py_with_AI_intro.html#使用-ai-写一篇完整的论文推介",
-    "href": "body/00_py_with_AI_intro.html#使用-ai-写一篇完整的论文推介",
-    "title": "4  借助 AI 写代码",
-    "section": "4.7 使用 AI 写一篇完整的论文推介",
-    "text": "4.7 使用 AI 写一篇完整的论文推介\n\nDu-2024-EE-中文精要生成过程\n\n核心提示词： 参见 连玉君的 Prompts\n\n\n\n\n\n\n提示词\n\n\n\n\nPrompt 1:\n\n{先上传论文的 PDF 版本给 ChatGPT，然后输入以下提示词：}\n“写一篇论文推介，介绍附件中的论文。先列个提纲给我。”\n\nPrompt 2:\n\n分批次输出吧\n\n计量模型的证明和详细推导过程可以省略，但要补充简单直白的语言来解释模型和参数的经济含义\n把数学符号和公司都采用 Latex 格式来写，以保证输出美观\n行内公式采用 $f=x$ 格式，单行公式采用 $$f=x$$ 格式\n所有括号都用半角模式，中英文混排注意加空格\n不要添加如何表情符号\n按 ‘## 1. xxx’，‘### 1.1 xxx’，‘#### xxx’(不编号) 的等格式来分 Section, Subsection, Subsubsection\n参考文献格式：\n\nxxx, xxx, xxx. (2023). xxx. Journal of xxx, 1(1), 1-10. [Link](https://doi.org/{DOI}), [-PDF-](http://sci-hub.ren/{DOI}), [Google](&lt;https://scholar.google.com/scholar?q={Title of the Paper}&gt;).\n\n注意：每次生成答案时，都在首行按如下格式添加 label，以便我追问时定位：‘mylabel-01’，‘mylabel-02’，……\n\n\nPrompt 3:\n\n连续输出，中间无需停顿\n\nPrompt 4:\n\n详细介绍一下 4.4 模型四：部分线性函数系数面板模型（PLFC） 中的模型设定和估计方法\n\nPrompt 5:\n\n补充一个 Subsection，添加如下内容：\n\n为没有任何非参数估计基础的读者解释一下 样条基函数（Sieve Estimation）\n再补充一个 subsection，解释一下边际效应的置信区间是如何计算的",
+    "section": "4.4 我的使用经验",
+    "text": "4.4 我的使用经验\n\n我常用的提示词\n\n\nhttps://github.com/arlionn/UseChatGPT\nhttps://gitee.com/arlionn/UseChatGPT (码云版)\n\n\n借助 AI 找 IV：连玉君的实战经验\n\n\n帮我找 20 个 IV\n寻找 IV 的提示词如何写？\n\n\n4.4.1 实例：使用 AI 写一篇完整的论文推介\n\nDu-2024-EE-中文精要生成过程\n\n核心提示词： 参见 连玉君的 Prompts\n\n\n\n\n\n\n提示词\n\n\n\nPrompt 1:\n{先上传论文的 PDF 版本给 ChatGPT，然后输入以下提示词：}\n“写一篇论文推介，介绍附件中的论文。先列个提纲给我。”\nPrompt 2:\n分批次输出吧：\n\n计量模型的证明和详细推导过程可以省略，但要补充简单直白的语言来解释模型和参数的经济含义\n把数学符号和公式都采用 Latex 格式来写，以保证输出美观\n行内公式采用 $f=x$ 格式，单行公式采用 $$f=x$$ 格式\n所有括号都用半角模式，中英文混排注意加空格\n不要添加任何表情符号\n按 ‘## 1. xxx’，‘### 1.1 xxx’，‘#### xxx’(不编号) 的格式来分 Section, Subsection, Subsubsection\n参考文献格式：\n\nxxx, xxx, xxx. (2023). xxx. Journal of xxx, 1(1), 1-10. [Link](https://doi.org/{DOI}), [-PDF-](http://sci-hub.ren/{DOI}), [Google](&lt;https://scholar.google.com/scholar?q={Title of the Paper}&gt;).\n\n注意：每次生成答案时，都在首行按如下格式添加 label，以便我追问时定位：‘mylabel-01’，‘mylabel-02’，……\n\nPrompt 3:\n连续输出，中间无需停顿\nPrompt 4:\n详细介绍一下 4.4 模型四：部分线性函数系数面板模型（PLFC）中的模型设定和估计方法\nPrompt 5:\n补充一个 Subsection，添加如下内容： - 为没有任何非参数估计基础的读者解释一下样条基函数（Sieve Estimation） - 再补充一个 subsection，解释一下边际效应的置信区间是如何计算的",
     "crumbs": [
       "**Python 基础**",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>借助 AI 写代码</span>"
@@ -182,7 +149,7 @@
     "href": "body/00_py_with_AI_pic.html",
     "title": "5  Ansome Python + AI",
     "section": "",
-    "text": "5.1 画一幅图\n有了 AI 的协助，我们可以在只掌握少量编程知识的情况下，用 Python 实现各种复杂的功能。本章例举一些实例，旨在改变大家对「编程」的认知。\n最终你会发现，Python 只是我们完成某些分析和研究任务的工具而已。AI 的作用是让我们使用「自然语言」来编程。此时的编程主要包括如下几个要点：\n我在 R for Data Science 书中看到了一幅不错的图形，想要绘制出来。这幅图不算复杂：\n于是，我把图片发给了 AI 工具，配上提示词：\n我把相同的问题同事发给了 ChatGPT，DeepSeek 和 豆包。最终，豆包给出的图形效果最好：\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom matplotlib.table import Table\nfrom matplotlib.patches import FancyArrowPatch\n\n# 原始数据\ndata1 = {\n    'id': ['A', 'B'],\n    'x_1': [1, 5],\n    'x_2': [2, 6],\n    'y_1': [3, 7],\n    'y_2': [4, 8]\n}\ndf1 = pd.DataFrame(data1)\n\n# 转换后数据\ndata2 = {\n    'id': ['A', 'A', 'B', 'B'],\n    'x': [1, 2, 5, 6],\n    'y': [3, 4, 7, 8],\n    'num': [1, 2, 1, 2]\n}\ndf2 = pd.DataFrame(data2)\n\n# 定义颜色映射\ncolor_mapping = {\n    'x_1': 'lightblue',\n    'x_2': 'plum',\n    'y_1': 'lightgreen',\n    'y_2': 'lightgreen',\n    'x': 'lightblue',\n    'y': 'lightgreen',\n    'num': ['orange', 'violet']\n}\n\n# 创建图形和子图\nfig, ax = plt.subplots(figsize=(10, 4))\nax.axis('off')\n\n# 绘制原始表格\n# 绘制原始表格\ntable1 = ax.table(\n    cellText=df1.values,\n    colLabels=df1.columns,\n    cellLoc='center',\n    loc='left',\n    bbox=[0, 0.3, 0.4, 0.6]\n)\nfor (row, col), cell in table1.get_celld().items():\n    if row == 0:\n        cell.set_text_props(weight='bold')\n    if row &gt; 0:\n        colname = df1.columns[col]\n        cell.set_facecolor(color_mapping.get(colname, 'white'))\n    else:\n        colname = df1.columns[col]\n        cell.set_facecolor(color_mapping.get(colname, 'white'))\n\n# 绘制箭头\n#ax.arrow(0.45, 0.6, 0.1, 0, head_width=0.03, head_length=0.05, fc='k', ec='k')\n\n# 绘制转换后表格\ntable2 = ax.table(\n    cellText=df2.values,\n    colLabels=df2.columns,\n    cellLoc='center',\n    loc='right',\n    bbox=[0.55, 0.3, 0.4, 0.6]\n)\nfor (row, col), cell in table2.get_celld().items():\n    if row == 0:\n        cell.set_text_props(weight='bold')\n    if row &gt; 0:\n        colname = df2.columns[col]\n        if colname == 'num':\n            cell.set_facecolor(color_mapping['num'][(row-1) % 2])\n        else:\n            cell.set_facecolor(color_mapping.get(colname, 'white'))\n    else:\n        colname = df2.columns[col]\n        if colname == 'num':\n            cell.set_facecolor(color_mapping['num'][0])\n        else:\n            cell.set_facecolor(color_mapping.get(colname, 'white'))\n            # 添加 FancyArrowPatch 箭头以美化转换效果\n\n            fancy_arrow = FancyArrowPatch(\n                (0.48, 0.6), (0.52, 0.6),\n                transform=fig.transFigure,\n                connectionstyle=\"arc3,rad=0\",\n                arrowstyle='-|&gt;',\n                linewidth=2,\n                color='black'\n            )\n            fig.patches.append(fancy_arrow)\nplt.show()",
+    "text": "5.1 画一幅图\n有了 AI 的协助，我们可以在只掌握少量编程知识的情况下，用 Python 实现各种复杂的功能。本章例举一些实例，旨在改变大家对「编程」的认知。\n最终你会发现，Python 只是我们完成某些分析和研究任务的工具而已。AI 的作用是让我们使用「自然语言」来编程。此时的编程主要包括如下几个要点：\n我在 R for Data Science 书中看到了一幅不错的图形，想要绘制出来。这幅图不算复杂：\n于是，我把图片发给了 AI 工具，配上提示词：\n我把相同的问题同时发给了 ChatGPT，DeepSeek 和 豆包。最终，豆包给出的图形效果最好：\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom matplotlib.table import Table\nfrom matplotlib.patches import FancyArrowPatch\n\n# 原始数据\ndata1 = {\n    'id': ['A', 'B'],\n    'x_1': [1, 5],\n    'x_2': [2, 6],\n    'y_1': [3, 7],\n    'y_2': [4, 8]\n}\ndf1 = pd.DataFrame(data1)\n\n# 转换后数据\ndata2 = {\n    'id': ['A', 'A', 'B', 'B'],\n    'x': [1, 2, 5, 6],\n    'y': [3, 4, 7, 8],\n    'num': [1, 2, 1, 2]\n}\ndf2 = pd.DataFrame(data2)\n\n# 定义颜色映射\ncolor_mapping = {\n    'x_1': 'lightblue',\n    'x_2': 'plum',\n    'y_1': 'lightgreen',\n    'y_2': 'lightgreen',\n    'x': 'lightblue',\n    'y': 'lightgreen',\n    'num': ['orange', 'violet']\n}\n\n# 创建图形和子图\nfig, ax = plt.subplots(figsize=(10, 4))\nax.axis('off')\n\n# 绘制原始表格\n# 绘制原始表格\ntable1 = ax.table(\n    cellText=df1.values,\n    colLabels=df1.columns,\n    cellLoc='center',\n    loc='left',\n    bbox=[0, 0.3, 0.4, 0.6]\n)\nfor (row, col), cell in table1.get_celld().items():\n    if row == 0:\n        cell.set_text_props(weight='bold')\n    if row &gt; 0:\n        colname = df1.columns[col]\n        cell.set_facecolor(color_mapping.get(colname, 'white'))\n    else:\n        colname = df1.columns[col]\n        cell.set_facecolor(color_mapping.get(colname, 'white'))\n\n# 绘制箭头\n#ax.arrow(0.45, 0.6, 0.1, 0, head_width=0.03, head_length=0.05, fc='k', ec='k')\n\n# 绘制转换后表格\ntable2 = ax.table(\n    cellText=df2.values,\n    colLabels=df2.columns,\n    cellLoc='center',\n    loc='right',\n    bbox=[0.55, 0.3, 0.4, 0.6]\n)\nfor (row, col), cell in table2.get_celld().items():\n    if row == 0:\n        cell.set_text_props(weight='bold')\n    if row &gt; 0:\n        colname = df2.columns[col]\n        if colname == 'num':\n            cell.set_facecolor(color_mapping['num'][(row-1) % 2])\n        else:\n            cell.set_facecolor(color_mapping.get(colname, 'white'))\n    else:\n        colname = df2.columns[col]\n        if colname == 'num':\n            cell.set_facecolor(color_mapping['num'][0])\n        else:\n            cell.set_facecolor(color_mapping.get(colname, 'white'))\n            # 添加 FancyArrowPatch 箭头以美化转换效果\n\n            fancy_arrow = FancyArrowPatch(\n                (0.48, 0.6), (0.52, 0.6),\n                transform=fig.transFigure,\n                connectionstyle=\"arc3,rad=0\",\n                arrowstyle='-|&gt;',\n                linewidth=2,\n                color='black'\n            )\n            fig.patches.append(fancy_arrow)\nplt.show()",
     "crumbs": [
       "**Python 基础**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Ansome Python + AI</span>"

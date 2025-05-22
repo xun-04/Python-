@@ -92,7 +92,8 @@ format:
     callout-appearance: default        # 启用 callout 默认渲染样式
     md-extensions:
       - callout                       # 确保 markdown 支持 callout 块语法
-
+    includes:
+      after-body: _includes/counter.html   # 不蒜子网站总访问量计数器
 editor: visual
 
 # _quarto_yml refs
