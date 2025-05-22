@@ -7,6 +7,8 @@
 - 第一次小组作业已经发布：[ex_Team01.md](https://github.com/arlionn/ds/blob/main/homework/ex_Team01.md)
   - 提交截止时间：2025 年 5 月 29 日 23:59
 
+! 请认真阅读下方的「**作业提交说明**」。
+
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/Lianxh_装饰黄线.png)
 
 ## 作业提交说明
