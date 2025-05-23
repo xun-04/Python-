@@ -1,0 +1,160 @@
+{smcl}
+
+{txt}{net "from http://repec.org/bocode":SSC} Stata modules created or revised 2025-04-22 to 2025-05-22
+{hline}
+
+{net "describe http://repec.org/bocode/m/myreg2":MYREG2}
+{txt} module to export results of regression models to a word document{txt} Authors: Zumin Shi       Req: Stata version 17
+{txt} Created: 2025-05-22
+
+{net "describe http://repec.org/bocode/m/mode":MODE}
+{txt} module to display and store the mode of a variable{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Created: 2025-05-21
+
+{net "describe http://repec.org/bocode/m/markovpredict":MARKOVPREDICT}
+{txt} module for predicting the next state of a Markov chain model given specified past states {txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2025-05-12
+
+{net "describe http://repec.org/bocode/o/oga":OGA}
+{txt} module to perform estimation and inference for high-dimensional regressions without imposing the sparsity restriction{txt} Authors: Jooyoung Cha  Harold D. Chiang  Yuya Sasaki       Req: Stata version 14
+{txt} Created: 2025-05-12
+
+{net "describe http://repec.org/bocode/c/cjive":CJIVE}
+{txt} module to perform Cluster Jackknife Instrumental Variables Estimation (CJIVE){txt} Authors: Brigham Frandsen  Emily Leslie   Samuel McIntyre       Req: Stata version 18
+{txt} Created: 2025-05-10
+
+{net "describe http://repec.org/bocode/m/markovfirstorder":MARKOVFIRSTORDER}
+{txt} module for assessing whether a sequence follows an independent state model or a first-order Markov chain model{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2025-05-12
+
+{net "describe http://repec.org/bocode/k/koenker":KOENKER}
+{txt} module to perform Koenker/White detailed test for heteroskedasticity {txt} Authors: Kit Baum       Req: Stata version 12 and ivhettest from SSC (q.v.)
+{txt} Created: 2025-05-10
+
+{net "describe http://repec.org/bocode/t/timeleft":TIMELEFT}
+{txt} module to count the number of days...{txt} Authors: Kit Baum       Req: Stata version 16
+{txt} Created: 2025-05-09
+
+{net "describe http://repec.org/bocode/m/matchi2":MATCHI2}
+{txt} module for calculating Pearson's chi-squared from a two-way matrix of frequency counts{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2025-05-08
+
+{net "describe http://repec.org/bocode/d/descriptive_table":DESCRIPTIVE_TABLE}
+{txt} module to produce descriptive table with suppression of small cell counts in an active Word (.docx) document{txt} Authors:  Christiaan Righolt       Req: Stata version 18
+{txt} Created: 2025-05-01
+
+{net "describe http://repec.org/bocode/a/apcbound":APCBOUND}
+{txt} module providing tools to facilitate the Fosse-Winship bounding approach to APC analysis{txt} Authors:  Gordey Yastrebov       Req: Stata version 18 and palettes from SSC (q.v.)
+{txt} Revised: 2025-05-09
+
+{net "describe http://repec.org/bocode/m/markovci":MARKOVCI}
+{txt} module for computing nonparametric bootstrapped confidence intervals for discrete time Markov chains{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Created: 2025-04-30
+
+{net "describe http://repec.org/bocode/x/xtsurmg":XTSURMG}
+{txt} module implementing Fourier Seemingly Unrelated Regression Mean Group Estimator{txt} Authors:   Hasraddin Guliyev       Req: Stata version 16
+{txt} Created: 2025-04-27
+
+{net "describe http://repec.org/bocode/s/spsfe":SPSFE}
+{txt} module for estimation of spatial stochastic frontier models{txt} Authors: Luojia Wang       Req: Stata version 16.1, xtsfsp from SJ, moremata from SSC (q.v.)
+{txt} Revised: 2025-05-13
+
+{net "describe http://repec.org/bocode/r/randmarkovseq":RANDMARKOVSEQ}
+{txt} module to compute a random sequence of values from an underlying discrete time Markov chain{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2025-04-24
+
+{net "describe http://repec.org/bocode/b/biastest":BIASTEST}
+{txt} module to test parameter equality across different models{txt} Authors: Hasraddin Guliyev       Req: Stata version 18
+{txt} Revised: 2025-05-08
+
+{net "describe http://repec.org/bocode/t/tidytuesday":TIDYTUESDAY}
+{txt} module for fetching tidytuesday data{txt} Authors: Asjad Naqvi       Req: Stata version 11
+{txt} Revised: 2025-05-13
+
+{net "describe http://repec.org/bocode/g/getiref":GETIREF}
+{txt} module to list reference in Results Window, and download PDF, .ris, .bibtex files for given DOI{txt} Authors: Yujun Lian       Req: Stata version 14
+{txt} Revised: 2025-05-08
+
+{net "describe http://repec.org/bocode/t/ternary":TERNARY}
+{txt} module for trivariate plots{txt} Authors: Asjad Naqvi       Req: Stata version 15 and palettes, colrspace, moremata from SSC
+{txt} Revised: 2025-05-13
+
+{net "describe http://repec.org/bocode/c/cc_xd_didtextbook":CC_XD_DIDTEXTBOOK}
+{txt} module to provide do-files and datafiles for textbook{txt} Authors:  Clément de Chaisemartin    Xavier D'Haultfoeuille       Req: Stata version 12
+{txt} Created: 2025-05-16
+
+{net "describe http://repec.org/bocode/s/sccsdta":SCCSDTA}
+{txt} module to generate a dataset for the self-controlled case series method (SCCS){txt} Authors: Niels Henrik Bruun       Req: Stata version 12.1
+{txt} Revised: 2025-04-29
+
+{net "describe http://repec.org/bocode/l/listreg":LISTREG}
+{txt} module for the analysis of list experiments using linear regression{txt} Authors: Ben Jann       Req: Stata version 14 
+{txt} Revised: 2025-04-26
+
+{net "describe http://repec.org/bocode/n/nca":NCA}
+{txt} module to perform Necessary Condition Analysis (NCA){txt} Authors: Daniele Spinelli  Jan Dul       Req: Stata version 15
+{txt} Revised: 2025-04-24
+
+{net "describe http://repec.org/bocode/d/didplacebo":DIDPLACEBO}
+{txt} module for  in-time, in-space and mixed placebo tests for estimating difference-in-differences (DID) models{txt} Authors:  Qiang Chen   Ji Qi   Guanpeng Yan       Req: Stata version 16
+{txt} Revised: 2025-05-01
+
+{net "describe http://repec.org/bocode/d/did_multiplegt_dyn":DID_MULTIPLEGT_DYN}
+{txt} module to estimate event-study Difference-in-Difference (DID) estimators in designs with multiple groups and periods, with a potentially non-binary treatment that may increase or decrease multiple times{txt} Authors:  Clément de Chaisemartin    Diego Ciccia    Xavier D'Haultfoeuille    Felix Knau   Mélitine Malézieux   Doulo Sow       Req: Stata version 12 and gtools from SSC (q.v.avity2)
+{txt} Revised: 2025-05-22
+
+{net "describe http://repec.org/bocode/r/r2_mlm":R2_MLM}
+{txt} module to compute r-squared measures for models estimated by mixed{txt} Authors: Anthony J. Gambino       Req: Stata version 17
+{txt} Revised: 2025-05-01
+
+{net "describe http://repec.org/bocode/a/alluvial":ALLUVIAL}
+{txt} module for Alluvial graphs{txt} Authors: Asjad Naqvi       Req: Stata version 15 and palettes, colrspace from SSC
+{txt} Revised: 2025-05-13
+
+{net "describe http://repec.org/bocode/v/violinplot":VIOLINPLOT}
+{txt} module to draw violin plots{txt} Authors: Ben Jann       Req: Stata version 15 and dstat, moremata, palettes, and colrspace from SSC (q.v.)
+{txt} Revised: 2025-05-15
+
+{net "describe http://repec.org/bocode/a/attregtest":ATTREGTEST}
+{txt} module to implement the regression-based attrition tests proposed in  Ghanem et al. (2024).{txt} Authors: Dalia Ghanem  Sarojini Hirshleifer  Karen Ortiz-Becerra       Req: Stata version 13 and estout, randtreat from SSC (q.v.)
+{txt} Revised: 2025-05-08
+
+{net "describe http://repec.org/bocode/s/synth2":SYNTH2}
+{txt} module to implement synthetic control method (SCM) with placebo tests, robustness test and visualization{txt} Authors:  Guanpeng Yan   Qiang Chen       Req: Stata version 16 and synth from SSC (q.v.)
+{txt} Revised: 2025-04-29
+
+{net "describe http://repec.org/bocode/g/getcensus":GETCENSUS}
+{txt} module to load American Community Survey data from the U.S. Census Bureau API into Stata{txt} Authors: Claire Zippel  Matt Saenz   Raheem Chaudhry  Vincent Palacios       Req: Stata version 13.1 and jsonio from SSC (q.v.)
+{txt} Revised: 2025-04-24
+
+{net "describe http://repec.org/bocode/d/dstat":DSTAT}
+{txt} module to compute summary statistics and distribution functions including standard errors and optional covariate balancing{txt} Authors: Ben Jann       Req: Stata version 14 and moremata, coefplot from SSC (q.v.)
+{txt} Revised: 2025-04-26
+
+{net "describe http://repec.org/bocode/c/codensity":CODENSITY}
+{txt} module for kernel density estimation for one or more variables or groups{txt} Authors: Nicholas J. Cox       Req: Stata version 8
+{txt} Created: 2025-04-29
+
+{net "describe http://repec.org/bocode/c/classtab":CLASSTAB}
+{txt} module or computing diagnostic accuracy statistics and classification table{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2025-05-03
+
+{net "describe http://repec.org/bocode/i/itsa":ITSA}
+{txt} module to perform interrupted time series analysis for single and multiple groups{txt} Authors: Ariel Linden       Req: Stata version 11
+{txt} Revised: 2025-04-30
+
+{net "describe http://repec.org/bocode/d/domin":DOMIN}
+{txt} module to conduct dominance analysis {txt} Authors: Joseph N. Luchman       Req: Stata version 16
+{txt} Revised: 2025-05-21
+
+{net "describe http://repec.org/bocode/m/moremata":MOREMATA}
+{txt} module (Mata) to provide various functions{txt} Authors: Ben Jann       Req: Stata version 11
+{txt} Revised: 2025-05-01
+
+{net "describe http://repec.org/bocode/i/ivhettest":IVHETTEST}
+{txt} module to perform Pagan-Hall and related heteroskedasticity tests after IV {txt} Authors: Mark E Schaffer       Req: Stata version 12.0
+{txt} Revised: 2025-05-04
+
+{hline}
+{txt} End of recent additions and updates
+
