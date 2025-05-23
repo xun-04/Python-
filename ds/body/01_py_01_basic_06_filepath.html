@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; 前言 – 数据分析</title>
+<title>15&nbsp; Python 路径设置 – 数据分析</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../body/00_py_with_AI_intro.html" rel="next">
-<link href="../body/_home.html" rel="prev">
+<link href="../body/01_py_02_numpy_scipy.html" rel="next">
+<link href="../body/01_py_01_basic_05_OOP.html" rel="prev">
 <link href="../images/ds-book-logo-40.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_intro.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">前言</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_01_basic_06_filepath.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Python 路径设置</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -135,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../body/00_intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="../body/00_intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">前言</span></span></a>
   </div>
 </li>
@@ -216,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../body/01_py_01_basic_06_filepath.html" class="sidebar-item-text sidebar-link">
+  <a href="../body/01_py_01_basic_06_filepath.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Python 路径设置</span></span></a>
   </div>
 </li>
@@ -343,34 +377,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#python-语言简介" id="toc-python-语言简介" class="nav-link active" data-scroll-target="#python-语言简介"><span class="header-section-number">3.1</span> Python 语言简介</a>
+  <li><a href="#路径的基本类型" id="toc-路径的基本类型" class="nav-link active" data-scroll-target="#路径的基本类型"><span class="header-section-number">15.1</span> 路径的基本类型</a>
   <ul class="collapse">
-  <li><a href="#python-的主要特点" id="toc-python-的主要特点" class="nav-link" data-scroll-target="#python-的主要特点"><span class="header-section-number">3.1.1</span> Python 的主要特点</a></li>
-  <li><a href="#使用场景与优势" id="toc-使用场景与优势" class="nav-link" data-scroll-target="#使用场景与优势"><span class="header-section-number">3.1.2</span> 使用场景与优势</a></li>
-  <li><a href="#python-之禅the-zen-of-python" id="toc-python-之禅the-zen-of-python" class="nav-link" data-scroll-target="#python-之禅the-zen-of-python"><span class="header-section-number">3.1.3</span> Python 之禅（The Zen of Python）</a></li>
+  <li><a href="#路径中的常用符号" id="toc-路径中的常用符号" class="nav-link" data-scroll-target="#路径中的常用符号"><span class="header-section-number">15.1.1</span> 路径中的常用符号</a></li>
+  <li><a href="#当前工作目录" id="toc-当前工作目录" class="nav-link" data-scroll-target="#当前工作目录"><span class="header-section-number">15.1.2</span> 当前工作目录</a></li>
   </ul></li>
-  <li><a href="#参考资料" id="toc-参考资料" class="nav-link" data-scroll-target="#参考资料"><span class="header-section-number">3.2</span> 参考资料</a>
+  <li><a href="#子目录和上级目录的写法" id="toc-子目录和上级目录的写法" class="nav-link" data-scroll-target="#子目录和上级目录的写法"><span class="header-section-number">15.2</span> 子目录和上级目录的写法</a></li>
+  <li><a href="#路径设置方法" id="toc-路径设置方法" class="nav-link" data-scroll-target="#路径设置方法"><span class="header-section-number">15.3</span> 路径设置方法</a>
   <ul class="collapse">
-  <li><a href="#python-语言" id="toc-python-语言" class="nav-link" data-scroll-target="#python-语言"><span class="header-section-number">3.2.1</span> Python 语言</a></li>
-  <li><a href="#数据分析" id="toc-数据分析" class="nav-link" data-scroll-target="#数据分析"><span class="header-section-number">3.2.2</span> 数据分析</a></li>
-  <li><a href="#金融" id="toc-金融" class="nav-link" data-scroll-target="#金融"><span class="header-section-number">3.2.3</span> 金融</a></li>
-  <li><a href="#因果推断和机器学习" id="toc-因果推断和机器学习" class="nav-link" data-scroll-target="#因果推断和机器学习"><span class="header-section-number">3.2.4</span> 因果推断和机器学习</a></li>
+  <li><a href="#动态拼接路径的安全写法" id="toc-动态拼接路径的安全写法" class="nav-link" data-scroll-target="#动态拼接路径的安全写法"><span class="header-section-number">15.3.1</span> 动态拼接路径的安全写法</a></li>
+  <li><a href="#jupyter-notebookvs-code-下的路径问题" id="toc-jupyter-notebookvs-code-下的路径问题" class="nav-link" data-scroll-target="#jupyter-notebookvs-code-下的路径问题"><span class="header-section-number">15.3.2</span> Jupyter Notebook、VS Code 下的路径问题</a></li>
   </ul></li>
-  <li><a href="#数据" id="toc-数据" class="nav-link" data-scroll-target="#数据"><span class="header-section-number">3.3</span> 数据</a>
+  <li><a href="#应用" id="toc-应用" class="nav-link" data-scroll-target="#应用"><span class="header-section-number">15.4</span> 应用</a>
   <ul class="collapse">
-  <li><a href="#数据科学平台和搜索引擎" id="toc-数据科学平台和搜索引擎" class="nav-link" data-scroll-target="#数据科学平台和搜索引擎"><span class="header-section-number">3.3.1</span> 数据科学平台和搜索引擎</a></li>
-  <li><a href="#学校图书馆" id="toc-学校图书馆" class="nav-link" data-scroll-target="#学校图书馆"><span class="header-section-number">3.3.2</span> 学校图书馆</a></li>
-  <li><a href="#公开数据" id="toc-公开数据" class="nav-link" data-scroll-target="#公开数据"><span class="header-section-number">3.3.3</span> 公开数据</a></li>
+  <li><a href="#批量读取目录下文件" id="toc-批量读取目录下文件" class="nav-link" data-scroll-target="#批量读取目录下文件"><span class="header-section-number">15.4.1</span> 批量读取目录下文件</a></li>
+  <li><a href="#数据导入与结果保存范例" id="toc-数据导入与结果保存范例" class="nav-link" data-scroll-target="#数据导入与结果保存范例"><span class="header-section-number">15.4.2</span> 数据导入与结果保存范例</a></li>
   </ul></li>
+  <li><a href="#路径设置最佳实践" id="toc-路径设置最佳实践" class="nav-link" data-scroll-target="#路径设置最佳实践"><span class="header-section-number">15.5</span> 路径设置最佳实践</a></li>
+  <li><a href="#参考资料" id="toc-参考资料" class="nav-link" data-scroll-target="#参考资料"><span class="header-section-number">15.6</span> 参考资料</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_01_basic_06_filepath.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Python 路径设置</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">前言</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Python 路径设置</span></h1>
 </div>
 
 
@@ -387,227 +420,120 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="python-语言简介" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="python-语言简介"><span class="header-section-number">3.1</span> Python 语言简介</h2>
-<p>Python 由 Guido van Rossum 于 1991 年创建，至今已有三十多年历史。起初只是作为一种脚本语言，用于自动化简单任务。由于其语法简洁、易于扩展，并能与 C/C++ 等语言良好集成，Python 很快成为著名的「胶水语言」（glue language），广泛应用于数据分析、Web 开发、机器学习等领域。</p>
-<p>近年来，随着数据科学和人工智能的发展，Python 凭借其丰富的生态系统和社区支持，已成为最受欢迎的编程语言之一。根据 <a href="https://survey.stackoverflow.co/2023/#technology-most-popular-technologies">Stack Overflow Developer Survey</a> 和 <a href="https://www.tiobe.com/tiobe-index/">TIOBE 指数</a>，Python 多年位居榜首。</p>
-<section id="python-的主要特点" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="python-的主要特点"><span class="header-section-number">3.1.1</span> Python 的主要特点</h3>
+<p>在 Python 数据分析和科学计算项目中，文件路径的设置是最容易被初学者忽视但又至关重要的一个环节。路径的写法直接关系到数据能否顺利读取、结果能否正确保存、代码能否方便迁移和团队协作。</p>
+<p>假设有如下常见的项目结构：</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource dos number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>project/</span>
+<span id="cb1-2"><a href="#cb1-2"></a>├── data/</span>
+<span id="cb1-3"><a href="#cb1-3"></a>│    └── train.csv</span>
+<span id="cb1-4"><a href="#cb1-4"></a>├── scripts/</span>
+<span id="cb1-5"><a href="#cb1-5"></a>│    └── 02_regress.ipynb</span>
+<span id="cb1-6"><a href="#cb1-6"></a>├── 01_data_clean.ipynb</span>
+<span id="cb1-7"><a href="#cb1-7"></a>└── README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="路径的基本类型" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="路径的基本类型"><span class="header-section-number">15.1</span> 路径的基本类型</h2>
 <ul>
-<li><p><strong>解释型语言</strong>：不需要预编译，Python 解释器（interpreter）逐行执行代码。</p></li>
-<li><p><strong>动态类型</strong>：变量类型在运行时确定，无需显式声明。</p></li>
-<li><p><strong>多范式支持</strong>：</p>
+<li><p><strong>绝对路径</strong> 直接写明从磁盘根目录开始的完整路径，如 <code>C:/Users/lian/project/data/train.csv</code>。优点是直观，缺点是只能在自己的电脑上用，可移植性很差。</p></li>
+<li><p><strong>相对路径</strong> 以「当前工作目录」为起点的路径，写法更灵活，比如 <code>data/train.csv</code>、<code>./data/train.csv</code> 或 <code>../data/train.csv</code>。团队协作和跨平台推荐使用相对路径。</p></li>
+</ul>
+<section id="路径中的常用符号" class="level3" data-number="15.1.1">
+<h3 data-number="15.1.1" class="anchored" data-anchor-id="路径中的常用符号"><span class="header-section-number">15.1.1</span> 路径中的常用符号</h3>
 <ul>
-<li>面向对象编程（OOP）：支持类和对象。</li>
-<li>过程式编程（Procedural）：支持传统函数调用结构。</li>
-<li>函数式编程（Functional）：支持部分函数式特性（如 map、lambda、生成器等）。</li>
-</ul></li>
-<li><p><strong>跨平台</strong>：Python 程序在不同操作系统中运行一致。</p></li>
-<li><p><strong>GIL（Global Interpreter Lock）</strong>：标准 CPython 实现中采用全局解释器锁，限制了多线程的并行性，适合 IO 密集型任务，不适合重度 CPU 密集型并行任务。</p></li>
+<li><code>.</code> 表示当前目录</li>
+<li><code>..</code> 表示上一级目录</li>
+<li><code>/</code> 是路径分隔符，推荐在所有平台上都用 <code>/</code>（Windows 也支持）</li>
 </ul>
 </section>
-<section id="使用场景与优势" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="使用场景与优势"><span class="header-section-number">3.1.2</span> 使用场景与优势</h3>
-<p>Python 的语法简洁、学习曲线平缓，特别适合以下场景：</p>
+<section id="当前工作目录" class="level3" data-number="15.1.2">
+<h3 data-number="15.1.2" class="anchored" data-anchor-id="当前工作目录"><span class="header-section-number">15.1.2</span> 当前工作目录</h3>
+<p>Python 在读取文件时，所有相对路径都是以<strong>当前工作目录</strong>为基准。 你可以用如下代码查看：</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> os</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="bu">print</span>(os.getcwd())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>如果你在 <code>project/</code> 目录下打开并运行 <code>.ipynb</code> 或 <code>.py</code> 文件，那么：</p>
 <ul>
-<li>数据分析与探索性编程（如：Jupyter Notebook）</li>
-<li>自动化脚本与任务调度</li>
-<li>爬虫、文本处理、API 调用等 IO 密集型任务</li>
-<li>快速原型开发与教学演示</li>
-<li>与 C/C++/Java 等语言的接口开发，作为胶水语言集成系统</li>
+<li><code>data/train.csv</code></li>
+<li><code>./data/train.csv</code></li>
 </ul>
-<p>虽然 Python 的执行效率不如 C/C++，但<strong>开发效率高</strong>、<strong>社区包丰富</strong>，能大幅减少开发时间。在多数实际应用中，<em>程序员时间往往比机器运行时间更宝贵</em>。若需要兼顾性能，可使用 Python 编写框架，重计算部分可用 C/C++ 或 Julia 编写，并通过 Python 调用。</p>
+<p>这两种写法都表示访问 <code>project/data/</code> 目录下的 <code>train.csv</code> 文件。</p>
 </section>
-<section id="python-之禅the-zen-of-python" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="python-之禅the-zen-of-python"><span class="header-section-number">3.1.3</span> Python 之禅（The Zen of Python）</h3>
-<p>Python 的设计哲学追求：</p>
-<blockquote class="blockquote">
-<p><em>Beautiful is better than ugly.</em> <em>Explicit is better than implicit.</em> <em>Simple is better than complex.</em> ——《<a href="https://peps.python.org/pep-0020/">The Zen of Python</a>》</p>
-</blockquote>
-<p>可以在交互式终端中输入 <code>import this</code> 亲自体验。</p>
-<p>这些哲学使得 Python 鼓励「一种最好且明确的方法来完成一件事情」，避免花哨、歧义性强的语法，从而提高代码的可读性和可维护性。</p>
-<p>如需进一步了解 Python，推荐阅读：</p>
+</section>
+<section id="子目录和上级目录的写法" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="子目录和上级目录的写法"><span class="header-section-number">15.2</span> 子目录和上级目录的写法</h2>
+<p>如果你在 <code>scripts/02_regress.ipynb</code> 中想读取 <code>data/train.csv</code>：</p>
 <ul>
-<li>官方文档：<a href="https://docs.python.org/3/">https://docs.python.org/3/</a></li>
-<li>中文教程：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400">廖雪峰的 Python 教程</a></li>
-<li>快速参考手册：<a href="https://gto76.github.io/python-cheatsheet/">Python Cheatsheet</a></li>
+<li>路径写法应为 <code>../data/train.csv</code> 表示从 <code>scripts/</code> 目录返回上一层（即 <code>project/</code>），再进入 <code>data/</code>。</li>
 </ul>
+<p>例子：</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'../data/train.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>如果在 <code>project/</code> 目录下运行 <code>01_data_clean.ipynb</code>：</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data/train.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-</section>
-<section id="参考资料" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="参考资料"><span class="header-section-number">3.2</span> 参考资料</h2>
-<section id="python-语言" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="python-语言"><span class="header-section-number">3.2.1</span> Python 语言</h3>
+<section id="路径设置方法" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="路径设置方法"><span class="header-section-number">15.3</span> 路径设置方法</h2>
+<p><strong>基本原则</strong></p>
 <ul>
-<li>Johansson, R., 2024, Numerical Python: Scientific Computing and Data Science Applications with Numpy, SciPy and Matplotlib. Apress Berkeley, CA. <a href="https://link.springer.com/book/10.1007/979-8-8688-0413-7">Link</a>, <a href="https://link.springer.com/content/pdf/10.1007/979-8-8688-0413-7.pdf">PDF</a> (需要用校园 ID 登录), <a href="https://github.com/Apress/Numerical-Python-3rd-ed/fork">github</a>
-<ul>
-<li>Python 入门，绘图，科学计算，偏微分方程，统计和机器学习初步</li>
-<li>CHAPTER 4 Plotting and Visualization, 介绍绘图的基本元素.</li>
-</ul></li>
+<li><strong>使用相对路径</strong>，并以项目主目录作为入口，这样团队成员和后续自动化运行都不会因路径错乱而报错。</li>
+<li><strong>不要随意修改当前工作目录</strong>，如果确实需要，可以用 <code>os.chdir()</code>，但推荐只在顶层脚本中使用。</li>
+<li><strong>建议统一用 <code>/</code> 做路径分隔符</strong>，避免不同操作系统兼容性问题。</li>
 </ul>
+<section id="动态拼接路径的安全写法" class="level3" data-number="15.3.1">
+<h3 data-number="15.3.1" class="anchored" data-anchor-id="动态拼接路径的安全写法"><span class="header-section-number">15.3.1</span> 动态拼接路径的安全写法</h3>
+<p>Python 推荐用 <code>os.path.join()</code> 或 <code>pathlib.Path</code> 自动拼接路径，增强可移植性：</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> os</span>
+<span id="cb5-2"><a href="#cb5-2"></a>path <span class="op">=</span> os.path.join(<span class="st">'data'</span>, <span class="st">'train.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>或用 <code>pathlib</code>：</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb6-2"><a href="#cb6-2"></a>path <span class="op">=</span> Path(<span class="st">'data'</span>) <span class="op">/</span> <span class="st">'train.csv'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="数据分析" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="数据分析"><span class="header-section-number">3.2.2</span> 数据分析</h3>
+<section id="jupyter-notebookvs-code-下的路径问题" class="level3" data-number="15.3.2">
+<h3 data-number="15.3.2" class="anchored" data-anchor-id="jupyter-notebookvs-code-下的路径问题"><span class="header-section-number">15.3.2</span> Jupyter Notebook、VS Code 下的路径问题</h3>
 <ul>
-<li>Wes McKinney, <strong>2023</strong>. Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter (3E). <a href="https://wesmckinney.com/book/">Online-Read</a>, <a href="https://github.com/wesm/pydata-book">github</a>, <a href="https://gitee.com/wesmckinn/pydata-book">gitee-码云</a>
-<ul>
-<li>专注于数据处理，讲的比较细致</li>
-</ul></li>
-<li>🍎 <strong>PDSH</strong>   VanderPlas, 2023. <strong>Python Data Science Handbook</strong>, <a href="https://github.com/jakevdp/PythonDataScienceHandbook">github</a>, <a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">Online-Read</a>, <a href="https://dokumen.pub/python-data-science-handbook-essential-tools-for-working-with-data-2nbsped-1098121228-9781098121228.html">PDF-2E</a>
-<ul>
-<li>数据分析 + 可视化 + 机器学习</li>
-<li>提供了 Colab版本，可以无需安装 Python，直接在线运行</li>
-<li>本地已经下载：<strong>VanderPlas_2023_PDSH_Python_Data_Science_Handbook-2E.pdf</strong></li>
-</ul></li>
-</ul>
-</section>
-<section id="金融" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="金融"><span class="header-section-number">3.2.3</span> 金融</h3>
-<ul>
-<li>Scheuch, C., Voigt, S., Weiss, P., &amp; Frey, C. (<strong>2024</strong>). <strong>Tidy Finance with Python</strong> (1st ed.). Chapman and Hall/CRC, <a href="https://www.tidy-finance.org/python/index.html">Online-Read</a>, <a href="https://github.com/tidy-finance/website/tree/main/python">github</a>
-<ul>
-<li><a href="https://github.com/tidy-finance/py-tidyfinance">tidyfinance package</a></li>
-<li>股票回报, CAPM, 投资组合, Fama-French 因子模型等</li>
-<li>整体上比较简单，依赖于作者开发的 <code>tidyfinance</code> 扩展包。</li>
-</ul></li>
-<li>Hilpisch Y., <strong>Python for Finance</strong>. 2019. <a href="https://www.sea-stat.com/wp-content/uploads/2021/05/Yves-Hilpisch-Python-for-Finance_-Mastering-Data-Driven-Finance-Book-OReilly-2018.pdf#page=225.11">-PDF-</a>, <a href="https://github.com/yhilpisch/py4fi2nd">github</a></li>
-</ul>
-</section>
-<section id="因果推断和机器学习" class="level3" data-number="3.2.4">
-<h3 data-number="3.2.4" class="anchored" data-anchor-id="因果推断和机器学习"><span class="header-section-number">3.2.4</span> 因果推断和机器学习</h3>
-<ul>
-<li>Alves, Matheus Facure. <strong>2022</strong>, <strong>Causal Inference for The Brave and True</strong>. <a href="https://matheusfacure.github.io/python-causality-handbook/landing-page.html">Online Read</a>, <a href="https://github.com/matheusfacure/python-causality-handbook">-github-</a>
-<ul>
-<li>基本上覆盖了目前文献中使用多的多数因果推断方法，包括 IV, DID, SDID, PSM, Matching, Panel, SCM, RDD</li>
-<li>提供了完整的 Python 代码，可以 Fork <a href="https://github.com/matheusfacure/python-causality-handbook">-github-</a> 仓库，然后在本地运行 <strong>.ipynb</strong> 文档 (Jupyter Notebook)</li>
-<li>书中使用了 <code>causalml</code> 和 <code>dowhy</code> 两个包，前者是作者开发的一个包，后者是微软开发的一个包</li>
-</ul></li>
-<li>🍎 <strong>ISLP</strong>   James, G., D. Witten, T. Hastie, R. Tibshirani. <strong>An introduction to statistical learning</strong>: with Applications in Python (ISLP)[M]. Springer, <strong>2023</strong>, <a href="https://www.statlearning.com/">website</a>, <a href="https://www.statlearning.com/resources-python">Resources</a>, <a href="https://github.com/intro-stat-learning/ISLP_labs">github</a>, <a href="https://bayanbox.ir/view/1060725898744657072/An-Introduction-to-Statistical-Learning-with-Applications-in-Python.pdf">-PDF-</a>
-<ul>
-<li><a href="https://intro-stat-learning.github.io/ISLP/">ISLP documentation</a>：书中数据文件的详细说明</li>
-<li><a href="https://intro-stat-learning.github.io/ISLP/labs/Ch02-statlearn-lab.html">各章 Python 实操部分</a></li>
-<li><a href="https://github.com/ogulcancicek/An-Introduction-to-Statistical-Learning-Python">github-Notebooks</a>  |  <a href="https://github.com/hardikkamboj/An-Introduction-to-Statistical-Learning">Excercises and Solultions</a></li>
-</ul></li>
-<li>Tatsat, H., Puri, S., &amp; Lookabaugh, B. (2020). <strong>Machine Learning and Data Science Blueprints for Finance</strong>. O’Reilly Media. <a href="https://soclibrary.futa.edu.ng/books/Machine%20Learning%20and%20Data%20Science%20Blueprints%20for%20Finance%20(Hariom%20Tatsat,%20Sahil%20Puri,%20Brad%20Lookabaugh)%20(Z-Library).pdf">-PDF-</a>, <a href="https://github.com/tatsath/fin-ml">github-2022</a>, <a href="https://github.com/alecontuIT/ml_for_finance">githu-new-2024</a>
-<ul>
-<li>分成监督学习和非监督学习两大部分，包含了常用的机器学习方法</li>
-<li>13 cases，涉及债券市场，股票市场分析等</li>
-<li>书里边的所有案例对应的 Python 代码可以不用本地安装，而在作者提供的 <a href="https://mybinder.org/v2/gh/tatsath/fin-ml/master">在线平台</a> 上直接运行。</li>
-<li>用的 Jupyter Notebook</li>
-</ul></li>
+<li>Jupyter Notebook 的<strong>当前工作目录</strong>一般为你启动 Notebook 时所在的文件夹。</li>
+<li>VS Code 运行时，也以「打开文件夹」为当前工作目录。</li>
+<li>路径错误时优先检查 <code>os.getcwd()</code> 输出。</li>
 </ul>
 </section>
 </section>
-<section id="数据" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="数据"><span class="header-section-number">3.3</span> 数据</h2>
-<section id="数据科学平台和搜索引擎" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="数据科学平台和搜索引擎"><span class="header-section-number">3.3.1</span> 数据科学平台和搜索引擎</h3>
+<section id="应用" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="应用"><span class="header-section-number">15.4</span> 应用</h2>
+<section id="批量读取目录下文件" class="level3" data-number="15.4.1">
+<h3 data-number="15.4.1" class="anchored" data-anchor-id="批量读取目录下文件"><span class="header-section-number">15.4.1</span> 批量读取目录下文件</h3>
+<p>如果要读取 <code>data/</code> 目录下所有 csv 文件：</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">import</span> glob</span>
+<span id="cb7-2"><a href="#cb7-2"></a>files <span class="op">=</span> glob.glob(<span class="st">'data/*.csv'</span>)</span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="cf">for</span> f <span class="kw">in</span> files:</span>
+<span id="cb7-4"><a href="#cb7-4"></a>    <span class="bu">print</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="数据导入与结果保存范例" class="level3" data-number="15.4.2">
+<h3 data-number="15.4.2" class="anchored" data-anchor-id="数据导入与结果保存范例"><span class="header-section-number">15.4.2</span> 数据导入与结果保存范例</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-2"><a href="#cb8-2"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data/train.csv'</span>)          <span class="co"># 项目主目录下执行</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'../data/train.csv'</span>)       <span class="co"># scripts 子目录下执行</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="co"># 保存分析结果到 output 文件夹</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>df.to_csv(<span class="st">'output/result.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="路径设置最佳实践" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="路径设置最佳实践"><span class="header-section-number">15.5</span> 路径设置最佳实践</h2>
 <ul>
-<li><a href="https://www.kdnuggets.com/datasets/index.html">KDNuggets - datasets</a>
-<ul>
-<li>数据科学和机器学习领域的知名网站，提供了大量的资源和信息。</li>
-</ul></li>
-<li><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a>
-<ul>
-<li>全球知名的数据科学与机器学习社区，用户可以在平台上获取数据集、参与竞赛、分享与学习代码、交流讨论。</li>
-</ul></li>
-<li><a href="https://archive.ics.uci.edu/ml/index.php">UCI Machine Learning Repository</a>
-<ul>
-<li>机器学习领域最经典的数据集仓库，涵盖分类、回归、聚类等多种任务，适合教学和算法测试。</li>
-</ul></li>
-<li><a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>
-<ul>
-<li>谷歌推出的专用数据集搜索引擎，聚合全球各类开放数据集，支持多语言检索，便于快速定位所需数据。</li>
-</ul></li>
-<li><a href="https://registry.opendata.aws/">AWS Public Datasets</a>
-<ul>
-<li>亚马逊云平台提供的开放数据集，涵盖气象、基因组、卫星影像等大规模数据，适合云端分析和机器学习。</li>
-</ul></li>
-<li><a href="https://azure.microsoft.com/en-us/services/open-datasets/">Microsoft Azure Open Datasets</a>
-<ul>
-<li>微软云平台提供的开放数据集，聚焦天气、健康、金融等领域，便于在 Azure 上直接调用和分析。</li>
-</ul></li>
-<li><a href="https://data.europa.eu/en">Open Data Portal by European Union</a>
-<ul>
-<li>欧盟官方开放数据门户，收录成员国及欧盟机构的各类统计、经济、社会等数据，支持多语种访问。</li>
-</ul></li>
-<li><a href="https://data.worldbank.org/">World Bank Open Data</a>
-<ul>
-<li>世界银行开放数据平台，提供全球各国经济、社会、发展等宏观数据，适合国际比较和经济研究。</li>
-</ul></li>
-<li><a href="https://www.data.gov/">Data.gov</a>
-<ul>
-<li>美国政府开放数据平台，涵盖农业、气候、教育、能源等众多领域，数据权威且更新及时。</li>
-</ul></li>
-<li><a href="https://github.com/awesomedata/awesome-public-datasets">awesome-public-datasets</a>
-<ul>
-<li>GitHub 开放数据集列表</li>
-</ul></li>
+<li>明确项目目录结构，所有数据、脚本、输出分目录管理。</li>
+<li>路径全部写成相对路径，推荐以项目主目录为基准。</li>
+<li>多人协作时保证路径一致，避免硬编码本地绝对路径。</li>
+<li>重要脚本和 Notebook 开头加一句 <code>print(os.getcwd())</code>，方便调试和定位路径问题。</li>
+<li>文件找不到，多半是路径写错或者工作目录理解有误。 用 <code>os.getcwd()</code> 确认，再对照实际项目结构检查路径。</li>
+<li>不同系统分隔符问题，统一用 <code>/</code>，或用路径拼接函数自动处理。</li>
 </ul>
 </section>
-<section id="学校图书馆" class="level3" data-number="3.3.2">
-<h3 data-number="3.3.2" class="anchored" data-anchor-id="学校图书馆"><span class="header-section-number">3.3.2</span> 学校图书馆</h3>
-<blockquote class="blockquote">
-<p><a href="https://library.sysu.edu.cn/page/3640?title=&amp;eresource_sel2_ref%5B0%5D=133">中大图书馆-统计类数据库</a></p>
-</blockquote>
+<section id="参考资料" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="参考资料"><span class="header-section-number">15.6</span> 参考资料</h2>
 <ul>
-<li>CSMAR (国泰安数据库-公司金融-股票-债券):
-<ul>
-<li>🍎 <a href="https://data.csmar.com/" class="uri">https://data.csmar.com/</a></li>
-</ul></li>
-<li>EPS数据平台</li>
-<li><a href="https://library.sysu.edu.cn/eresource/364">Wind资讯金融终端</a></li>
-<li><a href="https://cyk.cei.cn/jsps/Default">中经网产业数据</a>
-<ul>
-<li>国内宏观层面的数据基本上都能够找到。Excel → Python/Stata</li>
-<li><a href="https://cyk.cei.cn/jsps/Banner?p=7a577a323842682b577237412b6b4b6e44416930556f3875357a4579464a6e56304d3752445359423745784b705547722f6b3563322b2f56755a614d36714d2b516f47584d79446175395874327970706241524e4730375662586264683577343752714c647562354133735832383158516f4434576154556164693332666f2b6b7677454f4759514c4c42584e4f6f4b553473757251533471354969715238653457567a6c354b42732f393076753773376b61305635694d544e3279426e4e6375534447497942782f7a4f4875416e5952647a346a6f685444457269776231344b486c584e4e6339535072554a3745526543316f4e6c4f766331624a65455650674e395a484c344d3142636f542f4f44724d6265564e696e5a413136684b62766959585a6b49505431646e52577938413267544151482f73713647576456667843373452747166563664566a7671664e707874616e37595855486255374765454241723045564c436274773d">例：宏观数据</a></li>
-</ul></li>
-<li><a href="https://library.sysu.edu.cn/eresource/771">中经网统计数据库</a></li>
-<li><a href="https://library.sysu.edu.cn/eresource/769">EMIS—Emerging Markets Information Service（新兴市场动态及商务信息数据库）</a>
-<ul>
-<li>新闻，股指，最新统计数据等</li>
-<li><a href="https://www.emis.cn/v2/countries/profile/CN/financial-markets/">China - Financial markest</a></li>
-</ul></li>
-</ul>
-<p><strong>RESSET系列数据库</strong></p>
-<ul>
-<li><a href="https://library.sysu.edu.cn/eresource/1540">RESSET系列数据库</a> | <a href="https://library.sysu.edu.cn/eresource/1541">RESSET企业大数据平台</a>
-<ul>
-<li>需要输入账号和密码</li>
-<li>1、中山大学校园网IP范围内，直接点击访问。</li>
-<li>2、官方网站访问： http://www.resset.cn，点击页面“快速登录”右边的“企业大数据平台”链接后输入对应的用户名及密码进行登录。用户名：sysu和密码：sysu1903。</li>
-<li>3、校外不限IP访问，通过CARSI平台访问登陆，访问地址：http://db.resset.com/，点击页面的：CARIS 平台登陆，选择学校，然后输入验证身份信息后登陆使用。</li>
-</ul></li>
-</ul>
-</section>
-<section id="公开数据" class="level3" data-number="3.3.3">
-<h3 data-number="3.3.3" class="anchored" data-anchor-id="公开数据"><span class="header-section-number">3.3.3</span> 公开数据</h3>
-<ul>
-<li><strong>全球数据</strong>
-<ul>
-<li>连小白, 2025, <a href="https://www.lianxh.cn/details/1559.html">GMD：最新全球宏观数据库-243个国家46个宏观变量</a>, 连享会 No.1559.
-<ul>
-<li><a href="https://www.globalmacrodata.com/data.html">GMD 主页</a></li>
-</ul></li>
-</ul></li>
-<li>各国、各级政府的统计局：
-<ul>
-<li><a href="https://www.census.gov/data.html">美国人口调查局</a></li>
-<li><a href="http://www.stats.gov.cn/">中国国家统计局</a></li>
-<li><a href="http://www.csrc.gov.cn/">中国证监会</a></li>
-<li><a href="http://www.pbc.gov.cn/">中国人民银行</a></li>
-</ul></li>
-<li>国际国内各类组织机构
-<ul>
-<li><a href="https://www.shihang.org/zh/home">世界银行</a></li>
-<li><a href="https://www.cdc.gov/">美国疾病预防控制中心</a></li>
-<li><a href="https://www.imf.org/en/Data">国际货币基金组织</a></li>
-<li><a href="https://fred.stlouisfed.org/">美国联邦储备银行</a></li>
-</ul></li>
+<li><a href="https://docs.python.org/3/library/os.path.html">Python 官方文档：os.path</a></li>
+<li><a href="https://docs.python.org/3/library/pathlib.html">pathlib 标准库文档</a></li>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html">pandas IO：数据读写</a></li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1035,13 +961,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../body/_home.html" class="pagination-link" aria-label="关于我们">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">关于我们</span></span>
+      <a href="../body/01_py_01_basic_05_OOP.html" class="pagination-link" aria-label="Python：语法解析-面向对象编程">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Python：语法解析-面向对象编程</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../body/00_py_with_AI_intro.html" class="pagination-link" aria-label="借助 AI 写代码">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">借助 AI 写代码</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../body/01_py_02_numpy_scipy.html" class="pagination-link" aria-label="NumPy">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">NumPy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

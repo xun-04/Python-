@@ -54,11 +54,19 @@
   </url>
   <url>
     <loc>https://book.lianxh.cn/ds/index.html/body/01_py_01_basic_05_OOP.html</loc>
-    <lastmod>2025-05-23T17:49:42.180Z</lastmod>
+    <lastmod>2025-05-23T18:03:24.603Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/ds/index.html/body/01_py_01_basic_06_filepath.html</loc>
+    <lastmod>2025-05-23T18:32:52.850Z</lastmod>
   </url>
   <url>
     <loc>https://book.lianxh.cn/ds/index.html/body/01_py_02_numpy_scipy.html</loc>
-    <lastmod>2025-05-19T10:05:45.383Z</lastmod>
+    <lastmod>2025-05-23T18:10:22.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://book.lianxh.cn/ds/index.html/body/01_py_02_pandas.html</loc>
+    <lastmod>2025-05-23T18:44:10.025Z</lastmod>
   </url>
   <url>
     <loc>https://book.lianxh.cn/ds/index.html/body/01_py_03_matplotlib.html</loc>
@@ -74,7 +82,7 @@
   </url>
   <url>
     <loc>https://book.lianxh.cn/ds/index.html/body/data_02_data_type.html</loc>
-    <lastmod>2025-05-16T17:37:51.758Z</lastmod>
+    <lastmod>2025-05-23T18:24:49.474Z</lastmod>
   </url>
   <url>
     <loc>https://book.lianxh.cn/ds/index.html/body/data_02_get_data_GMD.html</loc>

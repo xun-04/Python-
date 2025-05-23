@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>16&nbsp; Matplotlib简介 – 数据分析</title>
+<title>18&nbsp; Matplotlib简介 – 数据分析</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../body/01_py_04_func_and_module.html" rel="next">
-<link href="../body/01_py_02_numpy_scipy.html" rel="prev">
+<link href="../body/01_py_02_pandas.html" rel="prev">
 <link href="../images/ds-book-logo-40.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -146,7 +146,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_03_matplotlib.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_03_matplotlib.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -274,31 +274,43 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_01_basic_05_OOP.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Python：什么是面向对象的编程？</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Python：语法解析-面向对象编程</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_01_basic_06_filepath.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Python 路径设置</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_02_numpy_scipy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">NumPy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">NumPy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_02_pandas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">pandas 快速入门</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_03_matplotlib.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_04_func_and_module.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">函数</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">函数</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_05_class.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">类和对象</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">类和对象</span></span></a>
   </div>
 </li>
       </ul>
@@ -315,19 +327,19 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/data_02_data_type.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">数据分析是什么？</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">数据分析是什么？</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/data_02_get_data_GMD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_SZ_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
   </div>
 </li>
       </ul>
@@ -344,25 +356,25 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_01_intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_dis_box_violin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">箱型图和小提琴图</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">箱型图和小提琴图</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_dis_histogram.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_dis_kdensity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
   </div>
 </li>
       </ul>
@@ -379,7 +391,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_FRED_US_unemploy_rate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
   </div>
 </li>
       </ul>
@@ -394,14 +406,14 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#实例1数据的直方图以及散点图" id="toc-实例1数据的直方图以及散点图" class="nav-link active" data-scroll-target="#实例1数据的直方图以及散点图"><span class="header-section-number">17</span> 实例1：数据的直方图以及散点图</a></li>
-  <li><a href="#实例2经验分布函数" id="toc-实例2经验分布函数" class="nav-link" data-scroll-target="#实例2经验分布函数"><span class="header-section-number">18</span> 实例2：经验分布函数</a></li>
-  <li><a href="#实例3停止的鞅" id="toc-实例3停止的鞅" class="nav-link" data-scroll-target="#实例3停止的鞅"><span class="header-section-number">19</span> 实例3：停止的鞅</a></li>
-  <li><a href="#实例4大数定律和中心极限定理" id="toc-实例4大数定律和中心极限定理" class="nav-link" data-scroll-target="#实例4大数定律和中心极限定理"><span class="header-section-number">20</span> 实例4：大数定律和中心极限定理</a></li>
-  <li><a href="#实例5beta分布的矩估计" id="toc-实例5beta分布的矩估计" class="nav-link" data-scroll-target="#实例5beta分布的矩估计"><span class="header-section-number">21</span> 实例5：Beta分布的矩估计</a>
+  <li><a href="#实例1数据的直方图以及散点图" id="toc-实例1数据的直方图以及散点图" class="nav-link active" data-scroll-target="#实例1数据的直方图以及散点图"><span class="header-section-number">19</span> 实例1：数据的直方图以及散点图</a></li>
+  <li><a href="#实例2经验分布函数" id="toc-实例2经验分布函数" class="nav-link" data-scroll-target="#实例2经验分布函数"><span class="header-section-number">20</span> 实例2：经验分布函数</a></li>
+  <li><a href="#实例3停止的鞅" id="toc-实例3停止的鞅" class="nav-link" data-scroll-target="#实例3停止的鞅"><span class="header-section-number">21</span> 实例3：停止的鞅</a></li>
+  <li><a href="#实例4大数定律和中心极限定理" id="toc-实例4大数定律和中心极限定理" class="nav-link" data-scroll-target="#实例4大数定律和中心极限定理"><span class="header-section-number">22</span> 实例4：大数定律和中心极限定理</a></li>
+  <li><a href="#实例5beta分布的矩估计" id="toc-实例5beta分布的矩估计" class="nav-link" data-scroll-target="#实例5beta分布的矩估计"><span class="header-section-number">23</span> 实例5：Beta分布的矩估计</a>
   <ul class="collapse">
-  <li><a href="#矩估计" id="toc-矩估计" class="nav-link" data-scroll-target="#矩估计"><span class="header-section-number">21.1</span> 矩估计</a></li>
-  <li><a href="#极大似然估计" id="toc-极大似然估计" class="nav-link" data-scroll-target="#极大似然估计"><span class="header-section-number">21.2</span> 极大似然估计</a></li>
+  <li><a href="#矩估计" id="toc-矩估计" class="nav-link" data-scroll-target="#矩估计"><span class="header-section-number">23.1</span> 矩估计</a></li>
+  <li><a href="#极大似然估计" id="toc-极大似然估计" class="nav-link" data-scroll-target="#极大似然估计"><span class="header-section-number">23.2</span> 极大似然估计</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -409,9 +421,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_03_matplotlib.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_03_matplotlib.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></h1>
 </div>
 
 
@@ -431,8 +443,8 @@ window.Quarto = {
 <p>在 Python 中，可以用 <strong>matplotlib</strong> 画图。在使用前可以使用 (sudo) <code>pip install matplotlib</code> 安装。</p>
 <p>限于篇幅，我们无法详尽地介绍 <strong>Matplot</strong> 的用法，仅通过一些实例让诸位感受一下 <strong>Matplot</strong> 画图的几个思想和语法。</p>
 <p>在使用 <strong>Matplotlib</strong> 时，如果不知道某个图该怎么画，查看文档可能是最简单的方法，其官网： https://matplotlib.org 上提供了非常详细的示例、文档。此外， https://github.com/rougier/matplotlib-tutorial 也提供了一个非常好的教程，可以参阅。</p>
-<section id="实例1数据的直方图以及散点图" class="level1" data-number="17">
-<h1 data-number="17"><span class="header-section-number">17</span> 实例1：数据的直方图以及散点图</h1>
+<section id="实例1数据的直方图以及散点图" class="level1" data-number="19">
+<h1 data-number="19"><span class="header-section-number">19</span> 实例1：数据的直方图以及散点图</h1>
 <p>在接下来的例子中看我们随机生成了一组期望为 0，方差为 2，包含 500 个观察值的随机数，并画出其直方图：</p>
 <div id="cell-2" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>z<span class="op">=</span>nprd.normal(<span class="dv">0</span>,np.sqrt(<span class="dv">2</span>),<span class="dv">1000</span>) <span class="co">## 生成100个均值为0，方差为2的正态分布</span></span>
@@ -475,8 +487,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="实例2经验分布函数" class="level1" data-number="18">
-<h1 data-number="18"><span class="header-section-number">18</span> 实例2：经验分布函数</h1>
+<section id="实例2经验分布函数" class="level1" data-number="20">
+<h1 data-number="20"><span class="header-section-number">20</span> 实例2：经验分布函数</h1>
 <p>在下面的例子中，我们使用分布函数逆函数的方法，产生了一系列的服从指数分布的随机数，进而计算其经验分布函数：<span class="math display">\[\hat{F}\left(x\right)=\frac{1}{N}\sum_{i=1}^{N}{1\left\{x_i\leq x\right\}}\]</span></p>
 <p>由于指数分布的分布函数为：<span class="math display">\[F\left(x\right)=1-exp\left\{ -\frac{1}{b}x \right\}\]</span></p>
 <p>从而根据你分布函数法，给定一个b，通过均匀分布u产生指数分布的随机数的公式为：<span class="math display">\[x=-b\cdot \log\left(u\right)\]</span></p>
@@ -586,8 +598,8 @@ Mean absolute bias: 0.0147749175566</code></pre>
 </div>
 </div>
 </section>
-<section id="实例3停止的鞅" class="level1" data-number="19">
-<h1 data-number="19"><span class="header-section-number">19</span> 实例3：停止的鞅</h1>
+<section id="实例3停止的鞅" class="level1" data-number="21">
+<h1 data-number="21"><span class="header-section-number">21</span> 实例3：停止的鞅</h1>
 <p>现在考虑这么一个问题：如果我有 100 块钱，现在可以进行赌博，每次以 0.5 的概率赚一块钱，以 0.5 的概率赔一块钱，赚到 130 块我就收手，那么我的财富应该会如何变化？以下的程序模拟了这个问题：</p>
 <div id="cell-8" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -626,8 +638,8 @@ Mean absolute bias: 0.0147749175566</code></pre>
 </div>
 </div>
 </section>
-<section id="实例4大数定律和中心极限定理" class="level1" data-number="20">
-<h1 data-number="20"><span class="header-section-number">20</span> 实例4：大数定律和中心极限定理</h1>
+<section id="实例4大数定律和中心极限定理" class="level1" data-number="22">
+<h1 data-number="22"><span class="header-section-number">22</span> 实例4：大数定律和中心极限定理</h1>
 <p>我们知道，根据大数定律，样本均值会收敛到总体均值，即 <span class="math inline">\(\bar{x}\rightarrow_p\mu\)</span>，以下代码通过产生 10000 个服从 0-1 分布的随机数（真实概率为0.5，比如抛硬币），计算了前 n 次的均值，并将其画在图上：</p>
 <div id="cell-10" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -751,10 +763,10 @@ Mean absolute bias: 0.0147749175566</code></pre>
 </div>
 </div>
 </section>
-<section id="实例5beta分布的矩估计" class="level1" data-number="21">
-<h1 data-number="21"><span class="header-section-number">21</span> 实例5：Beta分布的矩估计</h1>
-<section id="矩估计" class="level2" data-number="21.1">
-<h2 data-number="21.1" class="anchored" data-anchor-id="矩估计"><span class="header-section-number">21.1</span> 矩估计</h2>
+<section id="实例5beta分布的矩估计" class="level1" data-number="23">
+<h1 data-number="23"><span class="header-section-number">23</span> 实例5：Beta分布的矩估计</h1>
+<section id="矩估计" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="矩估计"><span class="header-section-number">23.1</span> 矩估计</h2>
 <p>如果 <span class="math inline">\(x_i \sim Beta(\alpha, \beta)\)</span>，由于 <span class="math inline">\(E(x_i)=\frac{\alpha}{\alpha + \beta}\)</span>，而 <span class="math inline">\(E(x_i^2)=\frac{\alpha ^2}{(\alpha + \beta)^2}+\frac{\alpha \beta}{(\alpha + \beta)^2 (\alpha+\beta+1)}\)</span>，从而我们的矩估计即联立：</p>
 <p><span class="math display">\[\frac{\hat{\alpha}}{\hat{\alpha} + \hat{\beta}}=\bar{x}\]</span></p>
 <p><span class="math display">\[\frac{\hat{\alpha} ^2}{(\hat{\alpha} + \hat{\beta})^2}+\frac{\hat{\alpha} \hat{\beta}}{(\hat{\alpha} + \hat{\beta})^2 (\hat{\alpha}+\hat{\beta}+1)}=\overline{x^{2}}
@@ -827,8 +839,8 @@ RMSE =  [ 0.34249132  0.10370075]</code></pre>
 </div>
 </div>
 </section>
-<section id="极大似然估计" class="level2" data-number="21.2">
-<h2 data-number="21.2" class="anchored" data-anchor-id="极大似然估计"><span class="header-section-number">21.2</span> 极大似然估计</h2>
+<section id="极大似然估计" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="极大似然估计"><span class="header-section-number">23.2</span> 极大似然估计</h2>
 <p>由于Beta分布的对数似然函数为<span class="math display">\[\ln \left( \alpha, \beta | x \right)=\sum_{i=1}^N \left[ -\ln (Beta(\alpha,\beta))+(\alpha-1) \ln (x_i) + (\beta-1)\ln (1-x_i) \right]\]</span> 最大化似然函数，或者最小化负的似然函数，即可得到极大似然估计。</p>
 <div id="cell-16" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1321,13 +1333,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../body/01_py_02_numpy_scipy.html" class="pagination-link" aria-label="NumPy">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">NumPy</span></span>
+      <a href="../body/01_py_02_pandas.html" class="pagination-link" aria-label="pandas 快速入门">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">pandas 快速入门</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../body/01_py_04_func_and_module.html" class="pagination-link" aria-label="函数">
-        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">函数</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">函数</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
