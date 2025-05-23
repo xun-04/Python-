@@ -52,7 +52,10 @@ book:
         - body/01_py_01_basic_02_QuickReference.md
         - body/01_py_01_basic_03_Packages.md
         - body/01_py_01_basic_04_import.md
+        - body/01_py_01_basic_05_OOP.ipynb
+        - body/01_py_01_basic_06_filepath.ipynb
         - body/01_py_02_numpy_scipy.ipynb
+        - body/01_py_02_pandas.ipynb
         - body/01_py_03_matplotlib.ipynb
         - body/01_py_04_func_and_module.ipynb
         - body/01_py_05_class.ipynb
@@ -83,7 +86,7 @@ format:
     link-external-newwindow: true
     highlight: true         # 代码高亮
     highlight-style: atom-one  # 语法高亮, atom-one, breezy, github, tango, solarized-light
-    code-fold: true              # （可选）代码默认不折叠
+    code-fold: false              # （可选）代码默认不折叠
     code-line-numbers: true      # （可选）关闭行号
     code-overflow: wrap        # 控制长代码的换行
 #    html-table-processing: none    

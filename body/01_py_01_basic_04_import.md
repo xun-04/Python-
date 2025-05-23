@@ -1,6 +1,7 @@
-## Python 中的 import 使用详解
+# Python：import 使用详解
 
 ## 引言
+
 对于 Python 初学者来说，经常会在代码的前几行看到如下语句：
 
 ```python
@@ -137,7 +138,7 @@ C:\ProgramData\anaconda3\Lib\site-packages\numpy
 ├── linalg
 │   ├── linalg.py            <- 线性代数运算模块
 │   └── ...
-└── __init__.py             <- 初始化文件
+└── __init__.py              <- 初始化文件
 ```
 
 ### 从模块中导入特定函数的好处
@@ -177,6 +178,7 @@ def some_function():
 这种方式可以避免在程序启动时加载不必要的库，但对于大多数用户来说，在文件开始部分就加载所有需要的包更直观。
 
 ## 总结与建议
+
 在 Python 中，`import` 语句是非常重要的，它帮助我们将模块化的代码引入到程序中，提升代码的可重用性和模块化程度。我们可以通过导入整个模块、给模块起别名、从模块中导入特定功能等方式灵活地使用模块。
 
 在使用 `import` 时，我们需要根据实际需求选择合适的导入方式，避免命名冲突，并理解 `import` 是如何将模块加载到内存中的。继续实践并探索更多 Python 内置和第三方模块的使用，将会帮助你写出更简洁、可维护的代码。
@@ -184,6 +186,7 @@ def some_function():
 ## 参考资料
 
 以下是与本讲义直接相关的一些链接，供读者扩展阅读：
+
 1. [Python 官方文档 - 模块](https://docs.python.org/3/tutorial/modules.html)
 2. [numpy 官方文档](https://numpy.org/doc/stable/)
 3. [Python 中的包和模块概念](https://realpython.com/python-modules-packages/)
@@ -191,7 +194,8 @@ def some_function():
 
 ## 附录：提示词
 
-::: {.callout-prompt}
+::: {.callout-tip}
+## 提示词
 
 ### Prompt 1
 

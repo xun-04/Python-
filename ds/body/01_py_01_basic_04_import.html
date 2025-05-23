@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Python 中的 import 使用详解 – 数据分析</title>
+<title>13&nbsp; Python：import 使用详解 – 数据分析</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../body/01_py_02_numpy_scipy.html" rel="next">
+<link href="../body/01_py_01_basic_05_OOP.html" rel="next">
 <link href="../body/01_py_01_basic_03_Packages.html" rel="prev">
 <link href="../images/ds-book-logo-40.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_01_basic_04_import.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python 中的 import 使用详解</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_01_basic_04_import.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python：import 使用详解</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -239,31 +239,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_01_basic_04_import.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python 中的 import 使用详解</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python：import 使用详解</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/01_py_01_basic_05_OOP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Python：什么是面向对象的编程？</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_02_numpy_scipy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">NumPy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">NumPy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_03_matplotlib.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matplotlib简介</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_04_func_and_module.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">函数</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">函数</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/01_py_05_class.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">类和对象</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">类和对象</span></span></a>
   </div>
 </li>
       </ul>
@@ -280,19 +286,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/data_02_data_type.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">数据分析是什么？</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">数据分析是什么？</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/data_02_get_data_GMD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">获取数据：GMD</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_SZ_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">上证指数的时序特征</span></span></a>
   </div>
 </li>
       </ul>
@@ -309,25 +315,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_01_intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Python 可视化：简介</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_dis_box_violin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">箱型图和小提琴图</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">箱型图和小提琴图</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_dis_histogram.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">直方图</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/graph_dis_kdensity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">核密度函数图</span></span></a>
   </div>
 </li>
       </ul>
@@ -344,7 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../body/TS_FRED_US_unemploy_rate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
   </div>
 </li>
       </ul>
@@ -389,9 +395,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_01_basic_04_import.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python 中的 import 使用详解</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../body/00_py_with_AI_intro.html"><strong>Python 基础</strong></a></li><li class="breadcrumb-item"><a href="../body/01_py_01_basic_04_import.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python：import 使用详解</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python 中的 import 使用详解</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Python：import 使用详解</span></h1>
 </div>
 
 
@@ -497,7 +503,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ├── linalg
 │   ├── linalg.py            &lt;- 线性代数运算模块
 │   └── ...
-└── __init__.py             &lt;- 初始化文件</code></pre>
+└── __init__.py              &lt;- 初始化文件</code></pre>
 </section>
 <section id="从模块中导入特定函数的好处" class="level3" data-number="13.4.5">
 <h3 data-number="13.4.5" class="anchored" data-anchor-id="从模块中导入特定函数的好处"><span class="header-section-number">13.4.5</span> 从模块中导入特定函数的好处</h3>
@@ -533,11 +539,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="参考资料" class="level2" data-number="13.7">
 <h2 data-number="13.7" class="anchored" data-anchor-id="参考资料"><span class="header-section-number">13.7</span> 参考资料</h2>
-<p>以下是与本讲义直接相关的一些链接，供读者扩展阅读： 1. <a href="https://docs.python.org/3/tutorial/modules.html">Python 官方文档 - 模块</a> 2. <a href="https://numpy.org/doc/stable/">numpy 官方文档</a> 3. <a href="https://realpython.com/python-modules-packages/">Python 中的包和模块概念</a></p>
+<p>以下是与本讲义直接相关的一些链接，供读者扩展阅读：</p>
+<ol type="1">
+<li><a href="https://docs.python.org/3/tutorial/modules.html">Python 官方文档 - 模块</a></li>
+<li><a href="https://numpy.org/doc/stable/">numpy 官方文档</a></li>
+<li><a href="https://realpython.com/python-modules-packages/">Python 中的包和模块概念</a></li>
+</ol>
 </section>
 <section id="附录提示词" class="level2" data-number="13.8">
 <h2 data-number="13.8" class="anchored" data-anchor-id="附录提示词"><span class="header-section-number">13.8</span> 附录：提示词</h2>
-<div class="callout-prompt">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示词
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <section id="prompt-1" class="level3" data-number="13.8.1">
 <h3 data-number="13.8.1" class="anchored" data-anchor-id="prompt-1"><span class="header-section-number">13.8.1</span> Prompt 1</h3>
 <ul>
@@ -573,6 +593,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="13.8.4" class="anchored" data-anchor-id="prompt-4"><span class="header-section-number">13.8.4</span> Prompt 4</h3>
 <p>很好，整合成一个完整的文档。 在结尾处提供 2-3 个与本讲义直接相关的链接，以便读者扩展阅读</p>
 </section>
+</div>
 </div>
 
 
@@ -1008,8 +1029,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../body/01_py_02_numpy_scipy.html" class="pagination-link" aria-label="NumPy">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">NumPy</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../body/01_py_01_basic_05_OOP.html" class="pagination-link" aria-label="Python：什么是面向对象的编程？">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Python：什么是面向对象的编程？</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
