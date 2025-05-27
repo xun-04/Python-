@@ -1,7 +1,7 @@
 
 ## News
 - 第二次个人作业已经发布：[ex_P02.md](https://github.com/arlionn/ds/blob/main/homework/ex_P02.md)
-  - 提交截止时间：2025 年 5 月 30 日 23:59
+  - 提交截止时间：2025 年 6 月 6 日 23:59
 
 - 第一次个人作业已经发布：[ex_P01.md](https://github.com/arlionn/ds/blob/main/homework/ex_P01.md)
   - 提交截止时间：2025 年 5 月 23 日 23:59
