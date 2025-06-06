@@ -71,6 +71,12 @@ book:
         - body/graph_dis_box_violin.ipynb
         - body/graph_dis_histogram.ipynb
         - body/graph_dis_kdensity.ipynb
+    - part: "**回归分析**"
+      chapters: 
+        - body/test_AB_test.ipynb
+        - body/regress_01_OLS.ipynb
+        - body/regress_02_wage.ipynb
+        - body/regress_03_binscatter.ipynb
     - part: "**时间序列分析**"
       chapters: 
         - body/TS_FRED_US_unemploy_rate.ipynb

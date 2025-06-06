@@ -319,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>时间序列分析</strong></span></a>
+ <span class="menu-text"><strong>回归分析</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -327,8 +327,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../body/test_AB_test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">A/B test-分组对照试验</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../body/regress_binscatter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">分仓散点图</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text"><strong>时间序列分析</strong></span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../body/TS_FRED_US_unemploy_rate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">案例：美国失业率和通胀率关系分析</span></span></a>
   </div>
 </li>
       </ul>
@@ -439,6 +462,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="python-语言" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="python-语言"><span class="header-section-number">3.2.1</span> Python 语言</h3>
 <ul>
+<li>Allen Downey, 2012. Think Python: How to Think Like a Computer Scientist. <a href="https://greenteapress.com/thinkpython/thinkpython.pdf">-PDF-</a>
+<ul>
+<li>Python 入门，通俗易懂</li>
+</ul></li>
 <li>Johansson, R., 2024, Numerical Python: Scientific Computing and Data Science Applications with Numpy, SciPy and Matplotlib. Apress Berkeley, CA. <a href="https://link.springer.com/book/10.1007/979-8-8688-0413-7">Link</a>, <a href="https://link.springer.com/content/pdf/10.1007/979-8-8688-0413-7.pdf">PDF</a> (需要用校园 ID 登录), <a href="https://github.com/Apress/Numerical-Python-3rd-ed/fork">github</a>
 <ul>
 <li>Python 入门，绘图，科学计算，偏微分方程，统计和机器学习初步</li>
@@ -449,9 +476,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="数据分析" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="数据分析"><span class="header-section-number">3.2.2</span> 数据分析</h3>
 <ul>
-<li>Wes McKinney, <strong>2023</strong>. Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter (3E). <a href="https://wesmckinney.com/book/">Online-Read</a>, <a href="https://github.com/wesm/pydata-book">github</a>, <a href="https://gitee.com/wesmckinn/pydata-book">gitee-码云</a>
+<li>Wes McKinney, <strong>2022</strong>. Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter (3E). <a href="https://wesmckinney.com/book/">Online-Read</a>, <a href="https://github.com/wesm/pydata-book">github</a>, <a href="https://gitee.com/wesmckinn/pydata-book">gitee-码云</a>
 <ul>
 <li>专注于数据处理，讲的比较细致</li>
+<li>作者是 pandas 的创始人，书中介绍了 pandas 的使用方法</li>
 </ul></li>
 <li>🍎 <strong>PDSH</strong>   VanderPlas, 2023. <strong>Python Data Science Handbook</strong>, <a href="https://github.com/jakevdp/PythonDataScienceHandbook">github</a>, <a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">Online-Read</a>, <a href="https://dokumen.pub/python-data-science-handbook-essential-tools-for-working-with-data-2nbsped-1098121228-9781098121228.html">PDF-2E</a>
 <ul>
@@ -464,13 +492,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="金融" class="level3" data-number="3.2.3">
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="金融"><span class="header-section-number">3.2.3</span> 金融</h3>
 <ul>
-<li>Scheuch, C., Voigt, S., Weiss, P., &amp; Frey, C. (<strong>2024</strong>). <strong>Tidy Finance with Python</strong> (1st ed.). Chapman and Hall/CRC, <a href="https://www.tidy-finance.org/python/index.html">Online-Read</a>, <a href="https://github.com/tidy-finance/website/tree/main/python">github</a>
+<li><p>Scheuch, C., Voigt, S., Weiss, P., &amp; Frey, C. (<strong>2024</strong>). <strong>Tidy Finance with Python</strong> (1st ed.). Chapman and Hall/CRC, <a href="https://www.tidy-finance.org/python/index.html">Online-Read</a>, <a href="https://github.com/tidy-finance/website/tree/main/python">github</a></p>
 <ul>
 <li><a href="https://github.com/tidy-finance/py-tidyfinance">tidyfinance package</a></li>
 <li>股票回报, CAPM, 投资组合, Fama-French 因子模型等</li>
 <li>整体上比较简单，依赖于作者开发的 <code>tidyfinance</code> 扩展包。</li>
 </ul></li>
-<li>Hilpisch Y., <strong>Python for Finance</strong>. 2019. <a href="https://www.sea-stat.com/wp-content/uploads/2021/05/Yves-Hilpisch-Python-for-Finance_-Mastering-Data-Driven-Finance-Book-OReilly-2018.pdf#page=225.11">-PDF-</a>, <a href="https://github.com/yhilpisch/py4fi2nd">github</a></li>
+<li><p>Mastering Python for Finance – Second Edition, <a href="https://github.com/arlionn/Mastering-Python-for-Finance-Second-Edition">github</a></p></li>
+<li><p>Hilpisch Y., <strong>Python for Finance</strong>. 2019. <a href="https://www.sea-stat.com/wp-content/uploads/2021/05/Yves-Hilpisch-Python-for-Finance_-Mastering-Data-Driven-Finance-Book-OReilly-2018.pdf#page=225.11">-PDF-</a>, <a href="https://github.com/yhilpisch/py4fi2nd">github</a></p></li>
+<li><p>Machine Learning for Algorithmic Trading, 2nd edition. <a href="https://github.com/stefan-jansen/machine-learning-for-trading">github</a>, <a href="https://ml4trading.io/">Website</a></p></li>
 </ul>
 </section>
 <section id="因果推断和机器学习" class="level3" data-number="3.2.4">
@@ -559,6 +589,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://library.sysu.edu.cn/eresource/364">Wind资讯金融终端</a></li>
 <li><a href="https://cyk.cei.cn/jsps/Default">中经网产业数据</a>
 <ul>
+<li>登录方式：点击【登陆】按钮下方的【<code>中山大学集団用户快捷入口</code>】(无需账号密码)</li>
 <li>国内宏观层面的数据基本上都能够找到。Excel → Python/Stata</li>
 <li><a href="https://cyk.cei.cn/jsps/Banner?p=7a577a323842682b577237412b6b4b6e44416930556f3875357a4579464a6e56304d3752445359423745784b705547722f6b3563322b2f56755a614d36714d2b516f47584d79446175395874327970706241524e4730375662586264683577343752714c647562354133735832383158516f4434576154556164693332666f2b6b7677454f4759514c4c42584e4f6f4b553473757251533471354969715238653457567a6c354b42732f393076753773376b61305635694d544e3279426e4e6375534447497942782f7a4f4875416e5952647a346a6f685444457269776231344b486c584e4e6339535072554a3745526543316f4e6c4f766331624a65455650674e395a484c344d3142636f542f4f44724d6265564e696e5a413136684b62766959585a6b49505431646e52577938413267544151482f73713647576456667843373452747166563664566a7671664e707874616e37595855486255374765454241723045564c436274773d">例：宏观数据</a></li>
 </ul></li>
