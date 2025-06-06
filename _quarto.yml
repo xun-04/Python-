@@ -80,6 +80,18 @@ book:
     - part: "**时间序列分析**"
       chapters: 
         - body/TS_FRED_US_unemploy_rate.ipynb
+    - part: "**作业展示**"
+      chapters: 
+        - homework/pre/Dangdang_G7_01_data_clean.ipynb
+        - homework/pre/Dangdang_G7_02_data_analysis.ipynb
+        - homework/pre/G8_China_stock_analysis.ipynb
+        - homework/pre/Stock_G4_01_data_crawler.ipynb
+        - homework/pre/Stock_G4_02_data_cleaning.ipynb
+        - homework/pre/Stock_G4_03_data_analysis.ipynb
+        - homework/pre/_ex02_万诗晴.ipynb
+        - homework/pre/_ex02_吴倩茵.ipynb
+        - homework/pre/_ex02_朱少荣.ipynb
+        - homework/pre/_ex02_黄伊姿.ipynb
 
 format:
   html:
