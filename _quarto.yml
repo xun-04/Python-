@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: ds
+  output-dir: docs
 
 book:
   title: "数据分析"
